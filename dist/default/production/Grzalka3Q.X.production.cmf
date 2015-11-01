@@ -1,0 +1,1013 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\Grzalka3Q.X.production.obj
+cinit CODE 0 DA DA 2F 2
+text1 CODE 0 47A 47A B0 2
+text2 CODE 0 5E2 5E2 2D 2
+text3 CODE 0 57D 57D 35 2
+text4 CODE 0 60F 60F 27 2
+text5 CODE 0 656 656 12 2
+text6 CODE 0 636 636 20 2
+text7 CODE 0 71D 71D 9 2
+text8 CODE 0 5B2 5B2 30 2
+text9 CODE 0 52A 52A 53 2
+nvBANK0 BANK0 1 62 62 B 1
+nvBANK1 BANK1 1 A8 A8 1 1
+maintext CODE 0 109 109 371 2
+cstackCOMMON COMMON 1 75 75 5 1
+cstackBANK0 BANK0 1 4A 4A 18 1
+cstackBANK1 BANK1 1 A4 A4 4 1
+intentry CODE 0 4 4 D4 2
+bssBANK0 BANK0 1 20 20 2A 1
+bssBANK1 BANK1 1 A0 A0 4 1
+stringtext STRCODE 0 700 700 11 2
+idataBANK0 CODE 0 726 726 3 2
+dataBANK0 BANK0 1 6D 6D 3 1
+clrtext CODE 0 711 711 C 2
+bssCOMMON COMMON 1 70 70 5 1
+$C:\Temp\s67g.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 D8 D8 2 2
+config CONFIG 0 8007 8007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM A9-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26B 1
+BANK1 A9-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26B 1
+CONST 2-3 2
+CONST 668-6FF 2
+CONST 729-1FFF 2
+ENTRY 2-3 2
+ENTRY 668-6FF 2
+ENTRY 729-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-56F 1
+SFR11 580-5EF 1
+SFR12 600-66F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2059-218B 1
+CODE 2-3 2
+CODE 668-6FF 2
+CODE 729-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-3EF 1
+SFR8 400-46F 1
+SFR9 480-4EF 1
+BIGRAM 2000-21EF 1
+COMMON 7A-7D 1
+STRCODE 2-3 2
+STRCODE 668-6FF 2
+STRCODE 729-1FFF 2
+STRING 2-3 2
+STRING 668-6FF 2
+STRING 729-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Grzalka3Q.X.production.obj
+4 intentry CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+4 intentry CODE >645:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+8 intentry CODE >648:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+A intentry CODE >650:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+E intentry CODE >652:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+13 intentry CODE >653:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+15 intentry CODE >655:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+18 intentry CODE >656:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+1C intentry CODE >657:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+26 intentry CODE >659:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2B intentry CODE >660:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+37 intentry CODE >661:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+43 intentry CODE >665:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+46 intentry CODE >666:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+4A intentry CODE >667:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+55 intentry CODE >669:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+5A intentry CODE >670:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+66 intentry CODE >671:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+72 intentry CODE >676:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+7A intentry CODE >677:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+7B intentry CODE >679:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+7F intentry CODE >683:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+84 intentry CODE >684:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+88 intentry CODE >685:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+88 intentry CODE >687:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+8E intentry CODE >688:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+9E intentry CODE >691:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+A2 intentry CODE >692:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+A6 intentry CODE >695:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+AA intentry CODE >696:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+AE intentry CODE >697:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+AE intentry CODE >699:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+B4 intentry CODE >700:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+C4 intentry CODE >703:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+C8 intentry CODE >704:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+CC intentry CODE >707:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+D0 intentry CODE >708:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+D4 intentry CODE >711:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+D5 intentry CODE >718:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+DA cinit CODE >506:C:\Temp\s67g.
+DA cinit CODE >509:C:\Temp\s67g.
+DA cinit CODE >668:C:\Temp\s67g.
+DB cinit CODE >669:C:\Temp\s67g.
+DC cinit CODE >670:C:\Temp\s67g.
+DD cinit CODE >671:C:\Temp\s67g.
+DE cinit CODE >672:C:\Temp\s67g.
+DF cinit CODE >673:C:\Temp\s67g.
+E0 cinit CODE >674:C:\Temp\s67g.
+E1 cinit CODE >675:C:\Temp\s67g.
+E2 cinit CODE >676:C:\Temp\s67g.
+E5 cinit CODE >680:C:\Temp\s67g.
+E6 cinit CODE >681:C:\Temp\s67g.
+E7 cinit CODE >682:C:\Temp\s67g.
+E8 cinit CODE >683:C:\Temp\s67g.
+E9 cinit CODE >684:C:\Temp\s67g.
+EA cinit CODE >688:C:\Temp\s67g.
+EB cinit CODE >689:C:\Temp\s67g.
+EC cinit CODE >690:C:\Temp\s67g.
+ED cinit CODE >691:C:\Temp\s67g.
+EE cinit CODE >692:C:\Temp\s67g.
+EF cinit CODE >693:C:\Temp\s67g.
+F0 cinit CODE >694:C:\Temp\s67g.
+F1 cinit CODE >695:C:\Temp\s67g.
+F2 cinit CODE >696:C:\Temp\s67g.
+F5 cinit CODE >700:C:\Temp\s67g.
+F6 cinit CODE >701:C:\Temp\s67g.
+F7 cinit CODE >702:C:\Temp\s67g.
+F8 cinit CODE >703:C:\Temp\s67g.
+F9 cinit CODE >704:C:\Temp\s67g.
+FA cinit CODE >709:C:\Temp\s67g.
+FB cinit CODE >710:C:\Temp\s67g.
+FE cinit CODE >711:C:\Temp\s67g.
+FF cinit CODE >712:C:\Temp\s67g.
+102 cinit CODE >713:C:\Temp\s67g.
+103 cinit CODE >714:C:\Temp\s67g.
+105 cinit CODE >715:C:\Temp\s67g.
+106 cinit CODE >721:C:\Temp\s67g.
+106 cinit CODE >722:C:\Temp\s67g.
+107 cinit CODE >723:C:\Temp\s67g.
+109 maintext CODE >153:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+109 maintext CODE >156:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+10B maintext CODE >157:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+10C maintext CODE >158:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+10D maintext CODE >159:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+10E maintext CODE >163:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+10F maintext CODE >164:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+110 maintext CODE >165:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+111 maintext CODE >166:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+112 maintext CODE >167:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+113 maintext CODE >171:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+114 maintext CODE >172:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+115 maintext CODE >173:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+116 maintext CODE >174:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+117 maintext CODE >175:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+118 maintext CODE >177:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+119 maintext CODE >178:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+11A maintext CODE >185:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+11C maintext CODE >186:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+11D maintext CODE >187:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+11E maintext CODE >188:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+11F maintext CODE >189:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+120 maintext CODE >192:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+122 maintext CODE >193:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+123 maintext CODE >194:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+124 maintext CODE >195:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+125 maintext CODE >196:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+126 maintext CODE >197:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+127 maintext CODE >198:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+128 maintext CODE >199:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+129 maintext CODE >202:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+12B maintext CODE >203:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+12C maintext CODE >204:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+12D maintext CODE >205:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+12E maintext CODE >206:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+12F maintext CODE >207:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+130 maintext CODE >208:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+131 maintext CODE >209:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+132 maintext CODE >214:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+134 maintext CODE >215:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+135 maintext CODE >218:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+137 maintext CODE >219:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+138 maintext CODE >221:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+13A maintext CODE >222:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+13B maintext CODE >226:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+13D maintext CODE >227:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+13E maintext CODE >228:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+13F maintext CODE >229:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+140 maintext CODE >231:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+142 maintext CODE >234:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+143 maintext CODE >235:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+144 maintext CODE >236:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+145 maintext CODE >237:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+146 maintext CODE >238:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+147 maintext CODE >239:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+148 maintext CODE >242:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+149 maintext CODE >243:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+14B maintext CODE >244:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+14C maintext CODE >248:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+14E maintext CODE >249:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+150 maintext CODE >250:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+152 maintext CODE >253:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+153 maintext CODE >254:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+155 maintext CODE >255:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+157 maintext CODE >258:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+158 maintext CODE >259:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+159 maintext CODE >260:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+15A maintext CODE >262:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+15C maintext CODE >263:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+160 maintext CODE >264:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+161 maintext CODE >267:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+163 maintext CODE >268:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+164 maintext CODE >270:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+165 maintext CODE >271:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+166 maintext CODE >272:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+167 maintext CODE >273:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+168 maintext CODE >274:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+16A maintext CODE >275:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+16C maintext CODE >277:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+174 maintext CODE >279:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+175 maintext CODE >280:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+17B maintext CODE >281:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+17F maintext CODE >285:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+185 maintext CODE >286:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+186 maintext CODE >289:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+18C maintext CODE >290:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+192 maintext CODE >291:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+198 maintext CODE >292:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+19D maintext CODE >293:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+1AA maintext CODE >295:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+1BA maintext CODE >296:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+1C9 maintext CODE >299:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+1CF maintext CODE >300:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+1D0 maintext CODE >301:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+1D1 maintext CODE >302:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+1D3 maintext CODE >303:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+1D4 maintext CODE >304:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+1DF maintext CODE >305:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+1EA maintext CODE >306:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+1F5 maintext CODE >309:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+1F9 maintext CODE >313:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+1FD maintext CODE >314:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+201 maintext CODE >317:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+201 maintext CODE >320:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+209 maintext CODE >321:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+20D maintext CODE >323:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+211 maintext CODE >324:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+215 maintext CODE >328:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+21B maintext CODE >329:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+21E maintext CODE >330:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+228 maintext CODE >332:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+22E maintext CODE >333:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+232 maintext CODE >334:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+238 maintext CODE >336:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+239 maintext CODE >337:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+23A maintext CODE >338:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+23E maintext CODE >341:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+245 maintext CODE >342:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+249 maintext CODE >343:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+253 maintext CODE >348:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+25A maintext CODE >349:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+25D maintext CODE >350:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+267 maintext CODE >352:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+26D maintext CODE >353:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+271 maintext CODE >354:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+277 maintext CODE >356:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+278 maintext CODE >357:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+279 maintext CODE >358:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+27D maintext CODE >361:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+284 maintext CODE >362:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+288 maintext CODE >363:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+292 maintext CODE >368:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+299 maintext CODE >369:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2A7 maintext CODE >370:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2A8 maintext CODE >371:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2B6 maintext CODE >372:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2B7 maintext CODE >373:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2C5 maintext CODE >374:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2C6 maintext CODE >375:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2CA maintext CODE >376:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2CE maintext CODE >377:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2CE maintext CODE >378:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2DC maintext CODE >379:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2DC maintext CODE >384:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2E8 maintext CODE >386:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2EF maintext CODE >387:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2F5 maintext CODE >388:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2FA maintext CODE >392:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+2FF maintext CODE >397:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+305 maintext CODE >398:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+30F maintext CODE >399:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+320 maintext CODE >400:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+327 maintext CODE >401:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+337 maintext CODE >403:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+347 maintext CODE >404:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+356 maintext CODE >407:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+35A maintext CODE >411:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+35E maintext CODE >425:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+360 maintext CODE >426:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+36A maintext CODE >427:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+36D maintext CODE >428:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+373 maintext CODE >429:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+379 maintext CODE >430:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+37A maintext CODE >431:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+37B maintext CODE >433:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+381 maintext CODE >435:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+382 maintext CODE >436:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+383 maintext CODE >437:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+387 maintext CODE >441:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+38B maintext CODE >442:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+38F maintext CODE >444:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3A9 maintext CODE >445:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3AD maintext CODE >446:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3B3 maintext CODE >448:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3BC maintext CODE >449:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3C4 maintext CODE >451:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3C5 maintext CODE >452:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3C5 maintext CODE >453:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3C8 maintext CODE >458:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3C9 maintext CODE >463:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3C9 maintext CODE >464:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3CB maintext CODE >465:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3CD maintext CODE >469:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3CE maintext CODE >474:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3CE maintext CODE >475:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3D0 maintext CODE >476:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3D1 maintext CODE >477:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3D2 maintext CODE >478:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3D3 maintext CODE >480:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3E9 maintext CODE >481:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3EB maintext CODE >482:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3EC maintext CODE >483:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3ED maintext CODE >485:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+3EE maintext CODE >451:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+403 maintext CODE >486:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+409 maintext CODE >487:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+409 maintext CODE >489:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+40C maintext CODE >490:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+410 maintext CODE >491:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+414 maintext CODE >492:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+429 maintext CODE >497:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+42D maintext CODE >498:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+42F maintext CODE >499:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+430 maintext CODE >500:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+431 maintext CODE >501:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+432 maintext CODE >502:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+43B maintext CODE >510:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+43E maintext CODE >512:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+456 maintext CODE >513:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+45D maintext CODE >515:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+465 maintext CODE >521:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+469 maintext CODE >522:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+471 maintext CODE >523:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+472 maintext CODE >524:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+477 maintext CODE >525:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+478 maintext CODE >527:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+478 maintext CODE >529:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+479 maintext CODE >317:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+47A text1 CODE >537:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+47A text1 CODE >541:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+482 text1 CODE >542:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+492 text1 CODE >543:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+4A2 text1 CODE >544:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+4B1 text1 CODE >545:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+4B2 text1 CODE >546:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+4B7 text1 CODE >547:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+4C0 text1 CODE >548:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+4D0 text1 CODE >549:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+4D4 text1 CODE >550:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+4D6 text1 CODE >551:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+4F2 text1 CODE >552:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+4FA text1 CODE >553:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+50A text1 CODE >554:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+519 text1 CODE >555:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+51A text1 CODE >556:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+51C text1 CODE >557:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+51D text1 CODE >558:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+522 text1 CODE >559:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+526 text1 CODE >560:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+527 text1 CODE >561:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+529 text1 CODE >562:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+52A text9 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+52A text9 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+533 text9 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+539 text9 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+53B text9 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+53D text9 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+544 text9 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+548 text9 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+549 text9 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+550 text9 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+560 text9 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+568 text9 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+569 text9 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+570 text9 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+574 text9 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+57D text3 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+57D text3 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+580 text3 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+584 text3 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+586 text3 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+588 text3 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+58D text3 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+591 text3 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+592 text3 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+597 text3 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+59F text3 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+5A3 text3 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+5A4 text3 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+5A9 text3 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+5AD text3 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+5B2 text8 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul32.c
+5B2 text8 CODE >119:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul32.c
+5BB text8 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul32.c
+5BD text8 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul32.c
+5C5 text8 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul32.c
+5CC text8 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul32.c
+5D3 text8 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul32.c
+5D9 text8 CODE >128:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul32.c
+5E2 text2 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+5E2 text2 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+5E7 text2 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+5E9 text2 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+5EB text2 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+5F0 text2 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+5F4 text2 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+5F5 text2 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+5FD text2 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+601 text2 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+606 text2 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+60A text2 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+60F text4 CODE >600:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+60F text4 CODE >601:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+611 text4 CODE >602:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+612 text4 CODE >603:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+614 text4 CODE >605:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+618 text4 CODE >606:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+61C text4 CODE >608:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+61D text4 CODE >609:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+61E text4 CODE >610:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+61F text4 CODE >612:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+623 text4 CODE >613:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+624 text4 CODE >616:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+625 text4 CODE >617:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+628 text4 CODE >618:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+632 text4 CODE >619:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+634 text4 CODE >621:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+635 text4 CODE >622:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+636 text6 CODE >625:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+636 text6 CODE >626:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+638 text6 CODE >627:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+639 text6 CODE >628:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+63B text6 CODE >630:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+63F text6 CODE >631:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+643 text6 CODE >633:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+644 text6 CODE >634:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+645 text6 CODE >635:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+648 text6 CODE >636:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+652 text6 CODE >637:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+654 text6 CODE >639:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+655 text6 CODE >640:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+656 text5 CODE >568:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+658 text5 CODE >572:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+65A text5 CODE >573:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+65E text5 CODE >574:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+662 text5 CODE >576:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+663 text5 CODE >577:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+664 text5 CODE >578:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+665 text5 CODE >580:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+711 clrtext CODE >651:C:\Temp\s67g.
+711 clrtext CODE >652:C:\Temp\s67g.
+712 clrtext CODE >653:C:\Temp\s67g.
+712 clrtext CODE >654:C:\Temp\s67g.
+713 clrtext CODE >655:C:\Temp\s67g.
+714 clrtext CODE >656:C:\Temp\s67g.
+715 clrtext CODE >657:C:\Temp\s67g.
+716 clrtext CODE >658:C:\Temp\s67g.
+717 clrtext CODE >659:C:\Temp\s67g.
+718 clrtext CODE >660:C:\Temp\s67g.
+719 clrtext CODE >661:C:\Temp\s67g.
+71A clrtext CODE >662:C:\Temp\s67g.
+71B clrtext CODE >664:C:\Temp\s67g.
+71C clrtext CODE >663:C:\Temp\s67g.
+71D text7 CODE >587:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+71D text7 CODE >589:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+720 text7 CODE >590:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+722 text7 CODE >591:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+723 text7 CODE >592:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+724 text7 CODE >593:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+725 text7 CODE >596:F:\TP-moje dokumenty\Programowanie\Microchip\workspace\Grzalka3Q.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_x 49 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+___latbits 2 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+___lwmod@counter 4F 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 8009 0 ABS 0 - -
+__Hspace_1 A9 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+write_flash@adr_hi 4E 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+write_flash@adr_lo 4A 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_PMCON1bits 195 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_flash_low 41 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_an E1E 0 STRCODE 0 stringtext dist/default/production\Grzalka3Q.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__Lstringtext 0 0 ABS 0 stringtext -
+__Hstrings 0 0 ABS 0 strings -
+_LATB 10D 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_LATC 10E 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+___sp 0 0 STACK 2 stack C:\Temp\s67g.obj
+_main 212 0 CODE 0 maintext dist/default/production\Grzalka3Q.X.production.obj
+_temp A0 0 BANK1 1 bssBANK1 dist/default/production\Grzalka3Q.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+start 1B0 0 CODE 0 init C:\Temp\s67g.obj
+ttemp 7E 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_czas_ms 20 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__size_of_write_flash 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+?___lmul 4A 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_OPTION_REGbits 95 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_wyswietlacz 74 0 COMMON 1 bssCOMMON dist/default/production\Grzalka3Q.X.production.obj
+__size_of_read_flash 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+_test_index 48 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+ttemp0 7E 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__size_of_erase_flash 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Temp\s67g.obj
+intlevel1 0 0 CODE 0 functab C:\Temp\s67g.obj
+intlevel2 0 0 CODE 0 functab C:\Temp\s67g.obj
+intlevel3 0 0 CODE 0 functab C:\Temp\s67g.obj
+intlevel4 0 0 CODE 0 functab C:\Temp\s67g.obj
+intlevel5 0 0 CODE 0 functab C:\Temp\s67g.obj
+_WDTCONbits 97 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OSCCONbits 99 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_temp_tabela 218C 0 ABS 1 - dist/default/production\Grzalka3Q.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+_ADCON1 9E 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_ANSELC 18E 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_unlock_flash E3A 0 CODE 0 text7 dist/default/production\Grzalka3Q.X.production.obj
+_FVRCONbits 117 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__end_of___lmul BC4 0 CODE 0 text8 dist/default/production\Grzalka3Q.X.production.obj
+_case_wyswietlacz 3A 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__CFG_CP$ON 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+main@tmp 5F 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+__LnvBANK1 0 0 ABS 0 nvBANK1 -
+___lwmod@divisor 4A 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__end_of___lldiv AFA 0 CODE 0 text9 dist/default/production\Grzalka3Q.X.production.obj
+__end_of___lwdiv B64 0 CODE 0 text3 dist/default/production\Grzalka3Q.X.production.obj
+__end_of___lwmod C1E 0 CODE 0 text2 dist/default/production\Grzalka3Q.X.production.obj
+erase_flash@adr_hi 4D 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+erase_flash@adr_lo 4A 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_adr_low 6E 0 BANK0 1 dataBANK0 dist/default/production\Grzalka3Q.X.production.obj
+___lwdiv@quotient 55 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__size_of_unlock_flash 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+___lwmod@dividend 4C 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+___lldiv@counter 57 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_WPUBbits 20D 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+start_initialization 1B4 0 CODE 0 cinit dist/default/production\Grzalka3Q.X.production.obj
+_PMADRH 192 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_PMADRL 191 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_PMCON2 196 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_PMDATH 194 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_PMDATL 193 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_TRISAbits 8C 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_TRISBbits 8D 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+___lldiv@dividend 4E 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__size_of_wyswietl 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__end_of_an E22 0 STRCODE 0 stringtext dist/default/production\Grzalka3Q.X.production.obj
+clear_ram0 E22 0 CODE 0 clrtext dist/default/production\Grzalka3Q.X.production.obj
+__pcstackBANK0 4A 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__pcstackBANK1 A4 0 BANK1 1 cstackBANK1 dist/default/production\Grzalka3Q.X.production.obj
+__end_of_unlock_flash E4C 0 CODE 0 text7 dist/default/production\Grzalka3Q.X.production.obj
+_czas_s_reset 66 0 BANK0 1 nvBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_write_flash C1E 0 CODE 0 text4 dist/default/production\Grzalka3Q.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Temp\s67g.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 BANK7 1 bank7 -
+__Hbank8 0 0 BANK8 1 bank8 -
+__Hbank9 0 0 BANK9 1 bank9 -
+__Hcinit 212 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+___lwdiv@counter 57 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__Hbank10 0 0 BANK10 1 bank10 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10012 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__Lbank8 0 0 BANK8 1 bank8 -
+__Lbank9 0 0 BANK9 1 bank9 -
+__Lcinit 1B4 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+_erase_flash C6C 0 CODE 0 text6 dist/default/production\Grzalka3Q.X.production.obj
+_PORTBbits D 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_wyswietl 8F4 0 CODE 0 text1 dist/default/production\Grzalka3Q.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 1B0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 1B0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 62 0 BANK0 1 nvBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__pnvBANK1 A8 0 BANK1 1 nvBANK1 dist/default/production\Grzalka3Q.X.production.obj
+___lmul B64 0 CODE 0 text8 dist/default/production\Grzalka3Q.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+_czas_flash 2A 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_ISR 8 0 CODE 0 intentry dist/default/production\Grzalka3Q.X.production.obj
+_PWM 70 0 COMMON 1 bssCOMMON dist/default/production\Grzalka3Q.X.production.obj
+__S0 8009 0 ABS 0 - -
+__S1 A9 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+_adc 28 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_idx 71 0 COMMON 1 bssCOMMON dist/default/production\Grzalka3Q.X.production.obj
+__end_of_wyswietl A54 0 CODE 0 text1 dist/default/production\Grzalka3Q.X.production.obj
+_adr_hi 6D 0 BANK0 1 dataBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_czas_s 2C 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__end_of_ISR 1B0 0 CODE 0 intentry dist/default/production\Grzalka3Q.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__HnvBANK1 0 0 ABS 0 nvBANK1 -
+__Lintentry 8 0 CODE 0 intentry -
+___lldiv@divisor 4A 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Temp\s67g.obj
+_flaga_temp 3F 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__pdataBANK0 6D 0 BANK0 1 dataBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__size_of___lmul 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+write_flash@data_lo 4B 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_licznik 72 0 COMMON 1 bssCOMMON dist/default/production\Grzalka3Q.X.production.obj
+___lldiv A54 0 CODE 0 text9 dist/default/production\Grzalka3Q.X.production.obj
+___lwdiv AFA 0 CODE 0 text3 dist/default/production\Grzalka3Q.X.production.obj
+___lwmod BC4 0 CODE 0 text2 dist/default/production\Grzalka3Q.X.production.obj
+__Lbank10 0 0 BANK10 1 bank10 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Lbank12 0 0 BANK12 1 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 212 0 CODE 0 maintext dist/default/production\Grzalka3Q.X.production.obj
+__Lbigram 0 0 ABS 0 bigram -
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+___lmul@multiplier 4A 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+__CFG_IESO$ON 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_LATAbits 10C 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_LATBbits 10D 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_START_Fl 39 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_read_flash CAC 0 CODE 0 text5 dist/default/production\Grzalka3Q.X.production.obj
+___lwdiv@divisor 50 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_timer1 2E 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_timer2 24 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_timer3 30 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_timer4 32 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_timer5 62 0 BANK0 1 nvBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_timer6 34 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_timer7 36 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__CFG_VCAPEN$OFF 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+stackhi 218B 0 ABS 0 - C:\Temp\s67g.obj
+stacklo 2059 0 ABS 0 - C:\Temp\s67g.obj
+_ADCON0bits 9D 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__pbssBIGRAM 218C 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_flash_hi 40 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__pbssCOMMON 70 0 COMMON 1 bssCOMMON dist/default/production\Grzalka3Q.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__Lend_init 1B0 0 CODE 0 end_init -
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 20C 0 CODE 0 cinit dist/default/production\Grzalka3Q.X.production.obj
+__Hintentry 1B0 0 CODE 0 intentry -
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+___lwdiv@dividend 52 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+?___lldiv 4A 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+?___lwdiv 50 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+?___lwmod 4A 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__ptext1 8F4 0 CODE 0 text1 dist/default/production\Grzalka3Q.X.production.obj
+__ptext2 BC4 0 CODE 0 text2 dist/default/production\Grzalka3Q.X.production.obj
+__ptext3 AFA 0 CODE 0 text3 dist/default/production\Grzalka3Q.X.production.obj
+__ptext4 C1E 0 CODE 0 text4 dist/default/production\Grzalka3Q.X.production.obj
+__ptext5 CAC 0 CODE 0 text5 dist/default/production\Grzalka3Q.X.production.obj
+__ptext6 C6C 0 CODE 0 text6 dist/default/production\Grzalka3Q.X.production.obj
+__ptext7 E3A 0 CODE 0 text7 dist/default/production\Grzalka3Q.X.production.obj
+__ptext8 B64 0 CODE 0 text8 dist/default/production\Grzalka3Q.X.production.obj
+__ptext9 A54 0 CODE 0 text9 dist/default/production\Grzalka3Q.X.production.obj
+__end_of_read_flash CD0 0 CODE 0 text5 dist/default/production\Grzalka3Q.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__end_of_write_flash C6C 0 CODE 0 text4 dist/default/production\Grzalka3Q.X.production.obj
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__pstringtext E00 0 STRCODE 0 stringtext dist/default/production\Grzalka3Q.X.production.obj
+_grzalka_numer 6B 0 BANK0 1 nvBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__CFG_LPBOR$OFF 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_adr_low2 6F 0 BANK0 1 dataBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__CFG_WDTE$ON 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__end_of__initialization 20C 0 CODE 0 cinit dist/default/production\Grzalka3Q.X.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+read_flash@adrs_hi 4B 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+read_flash@adrs_lo 4A 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__pidataBANK0 E4C 0 CODE 0 idataBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__end_of_erase_flash CAC 0 CODE 0 text6 dist/default/production\Grzalka3Q.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+_kro_1_tmp 42 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_kro_2_tmp 43 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_kro_3_tmp 45 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+___lmul@product 52 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+___lmul@multiplicand 4E 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_przycisk_minus_flag 46 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_czas_przerwa_ms 6A 0 BANK0 1 nvBANK0 dist/default/production\Grzalka3Q.X.production.obj
+___lldiv@quotient 53 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__pcstackCOMMON 75 0 COMMON 1 cstackCOMMON dist/default/production\Grzalka3Q.X.production.obj
+__Hend_init 1B4 0 CODE 0 end_init -
+__end_of_main 8F4 0 CODE 0 maintext dist/default/production\Grzalka3Q.X.production.obj
+__end_of_cyfry E1E 0 STRCODE 0 stringtext dist/default/production\Grzalka3Q.X.production.obj
+wyswietl@liczba 58 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_START 38 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_TRISC 8E 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_cyf_1 68 0 BANK0 1 nvBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_cyf_2 69 0 BANK0 1 nvBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_cyf_3 3D 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_cyfry E00 0 STRCODE 0 stringtext dist/default/production\Grzalka3Q.X.production.obj
+_kro_1 6C 0 BANK0 1 nvBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_kro_2 A8 0 BANK1 1 nvBANK1 dist/default/production\Grzalka3Q.X.production.obj
+_kro_3 44 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_multi 73 0 COMMON 1 bssCOMMON dist/default/production\Grzalka3Q.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\Grzalka3Q.X.production.obj
+__size_of_ISR 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+main@liczba_tmp 60 0 BANK0 1 cstackBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__initialization 1B4 0 CODE 0 cinit dist/default/production\Grzalka3Q.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\Grzalka3Q.X.production.obj
+__Hstringtext 0 0 ABS 0 stringtext -
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_przycisk_plus_flag 47 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_cyf_1_tmp 3B 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_cyf_2_tmp 3C 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_cyf_3_tmp 3E 0 BANK0 1 bssBANK0 dist/default/production\Grzalka3Q.X.production.obj
+_ANSELAbits 18C 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_ANSELBbits 18D 0 ABS 0 - dist/default/production\Grzalka3Q.X.production.obj
+_temp_sr A2 0 BANK1 1 bssBANK1 dist/default/production\Grzalka3Q.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+_temp_tabela 1 218C 0
+- 1 320 10
+- 1 2A0 50
+- 1 26C 4
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intentry 0 4 8 664 2
+reset_vec 0 0 0 2 2
+bssBANK0 1 20 20 50 1
+bssBANK1 1 A0 A0 9 1
+stringtext 0 700 E00 11 2
+clrtext 0 711 E22 18 2
+bssCOMMON 1 70 70 A 1
+config 0 8007 1000E 2 2
