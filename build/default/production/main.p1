@@ -146,7 +146,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "150 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic.h
 [v __delay `JF1996 ~T0 @X0 0 e ]
 [p i __delay ]
-"99 main.c
+"106 main.c
 [v _read_flash `(uc ~T0 @X0 0 ef2`uc`uc ]
 "481 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic16f1516.h
 [s S37 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -156,11 +156,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S36 . . ]
 "492
 [v _PORTBbits `VS36 ~T0 @X0 0 e@13 ]
-"102 main.c
+"109 main.c
 [v _erase_flash `(v ~T0 @X0 0 ef2`uc`uc ]
-"101
+"108
 [v _write_flash `(v ~T0 @X0 0 ef3`uc`uc`uc ]
-"98
+"105
 [v _wyswietl `(v ~T0 @X0 0 ef1`ui ]
 "2370 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic16f1516.h
 [s S130 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -2148,184 +2148,202 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _timer7 `Vui ~T0 @X0 1 e ]
 [; ;main.c: 43: volatile unsigned int timer7;
 "44
-[v _cyf_1 `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 44: volatile unsigned char cyf_1;
+[v _timer8 `Vui ~T0 @X0 1 e ]
+[; ;main.c: 44: volatile unsigned int timer8;
 "45
-[v _cyf_2 `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 45: volatile unsigned char cyf_2;
+[v _cyf_1 `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 45: volatile unsigned char cyf_1;
 "46
-[v _cyf_3 `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 46: volatile unsigned char cyf_3;
+[v _cyf_2 `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 46: volatile unsigned char cyf_2;
 "47
-[v _kro_1 `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 47: volatile unsigned char kro_1;
+[v _cyf_3 `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 47: volatile unsigned char cyf_3;
 "48
-[v _kro_2 `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 48: volatile unsigned char kro_2;
+[v _kro_1 `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 48: volatile unsigned char kro_1;
 "49
-[v _kro_3 `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 49: volatile unsigned char kro_3;
+[v _kro_2 `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 49: volatile unsigned char kro_2;
 "50
-[v _idx `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 50: volatile unsigned char idx;
+[v _kro_3 `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 50: volatile unsigned char kro_3;
 "51
-[v _multi `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 51: volatile char multi;
+[v _idx `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 51: volatile unsigned char idx;
 "52
+[v _multi `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 52: volatile char multi;
+"53
 [v _PWM `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 52: volatile char PWM;
-"55
-[v _temp `Vui ~T0 @X0 1 e ]
-[; ;main.c: 55: volatile unsigned int temp;
+[; ;main.c: 53: volatile char PWM;
 "56
-[v _temp_sr `Vui ~T0 @X0 1 e ]
-[; ;main.c: 56: volatile unsigned int temp_sr;
+[v _temp `Vui ~T0 @X0 1 e ]
+[; ;main.c: 56: volatile unsigned int temp;
 "57
+[v _temp_sr `Vui ~T0 @X0 1 e ]
+[; ;main.c: 57: volatile unsigned int temp_sr;
+"58
 [v _temp_tabela `Vui ~T0 @X0 -> 50 `i e ]
-[; ;main.c: 57: volatile unsigned int temp_tabela[50];
-"60
+[; ;main.c: 58: volatile unsigned int temp_tabela[50];
+"61
 [v _licznik `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 60: volatile unsigned char licznik;
-"62
-[v _wyswietlacz `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 62: volatile unsigned char wyswietlacz;
+[; ;main.c: 61: volatile unsigned char licznik;
 "63
-[v _case_wyswietlacz `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 63: volatile unsigned char case_wyswietlacz;
+[v _wyswietlacz `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 63: volatile unsigned char wyswietlacz;
 "64
-[v _cyf_1_tmp `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 64: volatile unsigned char cyf_1_tmp;
+[v _case_wyswietlacz `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 64: volatile unsigned char case_wyswietlacz;
 "65
-[v _cyf_2_tmp `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 65: volatile unsigned char cyf_2_tmp;
+[v _cyf_1_tmp `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 65: volatile unsigned char cyf_1_tmp;
 "66
-[v _cyf_3_tmp `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 66: volatile unsigned char cyf_3_tmp;
+[v _cyf_2_tmp `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 66: volatile unsigned char cyf_2_tmp;
 "67
-[v _kro_1_tmp `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 67: volatile unsigned char kro_1_tmp;
+[v _cyf_3_tmp `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 67: volatile unsigned char cyf_3_tmp;
 "68
-[v _kro_2_tmp `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 68: volatile unsigned char kro_2_tmp;
+[v _kro_1_tmp `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 68: volatile unsigned char kro_1_tmp;
 "69
+[v _kro_2_tmp `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 69: volatile unsigned char kro_2_tmp;
+"70
 [v _kro_3_tmp `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 69: volatile unsigned char kro_3_tmp;
-"71
+[; ;main.c: 70: volatile unsigned char kro_3_tmp;
+"72
 [v _test_index `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 71: volatile unsigned char test_index;
-"76
-[v _czas_s `Vui ~T0 @X0 1 e ]
-[; ;main.c: 76: volatile unsigned int czas_s;
+[; ;main.c: 72: volatile unsigned char test_index;
 "77
-[v _czas_flash `Vui ~T0 @X0 1 e ]
-[; ;main.c: 77: volatile unsigned int czas_flash;
+[v _czas_s `Vui ~T0 @X0 1 e ]
+[; ;main.c: 77: volatile unsigned int czas_s;
 "78
-[v _czas_s_reset `Vui ~T0 @X0 1 e ]
-[; ;main.c: 78: volatile unsigned int czas_s_reset;
+[v _czas_flash `Vui ~T0 @X0 1 e ]
+[; ;main.c: 78: volatile unsigned int czas_flash;
 "79
-[v _czas_ms `Vul ~T0 @X0 1 e ]
-[; ;main.c: 79: volatile unsigned long czas_ms;
+[v _czas_s_reset `Vui ~T0 @X0 1 e ]
+[; ;main.c: 79: volatile unsigned int czas_s_reset;
 "80
-[v _START `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 80: volatile unsigned char START;
+[v _czas_ms `Vul ~T0 @X0 1 e ]
+[; ;main.c: 80: volatile unsigned long czas_ms;
 "81
-[v _START_Fl `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 81: volatile unsigned char START_Fl;
+[v _START `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 81: volatile unsigned char START;
 "82
-[v _grzalka_numer `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 82: volatile unsigned char grzalka_numer;
+[v _START_Fl `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 82: volatile unsigned char START_Fl;
 "83
-[v _czas_przerwa_ms `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 83: volatile unsigned char czas_przerwa_ms;
+[v _grzalka_numer `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 83: volatile unsigned char grzalka_numer;
 "84
-[v _przycisk_plus_flag `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 84: volatile unsigned char przycisk_plus_flag;
+[v _czas_przerwa_ms `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 84: volatile unsigned char czas_przerwa_ms;
 "85
+[v _przycisk_plus_flag `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 85: volatile unsigned char przycisk_plus_flag;
+"86
 [v _przycisk_minus_flag `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 85: volatile unsigned char przycisk_minus_flag;
-"88
+[; ;main.c: 86: volatile unsigned char przycisk_minus_flag;
+"89
 [v _adr_low `Vuc ~T0 @X0 1 e ]
 [i _adr_low
 -> -> 253 `i `uc
 ]
-[; ;main.c: 88: volatile unsigned char adr_low = 0xFD;
-"89
+[; ;main.c: 89: volatile unsigned char adr_low = 0xFD;
+"90
 [v _adr_low2 `Vuc ~T0 @X0 1 e ]
 [i _adr_low2
 -> -> 254 `i `uc
 ]
-[; ;main.c: 89: volatile unsigned char adr_low2 = 0xFE;
-"90
+[; ;main.c: 90: volatile unsigned char adr_low2 = 0xFE;
+"91
 [v _adr_hi `Vuc ~T0 @X0 1 e ]
 [i _adr_hi
 -> -> 31 `i `uc
 ]
-[; ;main.c: 90: volatile unsigned char adr_hi = 0x1F;
-"91
-[v _flash_low `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 91: volatile unsigned char flash_low;
+[; ;main.c: 91: volatile unsigned char adr_hi = 0x1F;
 "92
+[v _flash_low `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 92: volatile unsigned char flash_low;
+"93
 [v _flash_hi `Vuc ~T0 @X0 1 e ]
-[; ;main.c: 92: volatile unsigned char flash_hi;
-[; ;main.c: 98: void wyswietl(unsigned int liczba);
-[; ;main.c: 99: unsigned char read_flash(unsigned char adrs_hi,unsigned char adrs_lo);
-[; ;main.c: 100: void unlock_flash(void);
-[; ;main.c: 101: void write_flash(unsigned char adr_hi,unsigned char adr_lo, unsigned char data_lo);
-[; ;main.c: 102: void erase_flash(unsigned char adr_hi,unsigned char adr_lo);
-"131
+[; ;main.c: 93: volatile unsigned char flash_hi;
+"96
+[v _adr_moc `Vuc ~T0 @X0 1 e ]
+[i _adr_moc
+-> -> 255 `i `uc
+]
+[; ;main.c: 96: volatile unsigned char adr_moc = 0xFF;
+"97
+[v _flash_moc `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 97: volatile unsigned char flash_moc;
+"98
+[v _moc `Vuc ~T0 @X0 1 e ]
+[; ;main.c: 98: volatile unsigned char moc;
+"100
+[v _ledBlink_time `Vui ~T0 @X0 1 e ]
+[; ;main.c: 100: volatile unsigned int ledBlink_time;
+[; ;main.c: 105: void wyswietl(unsigned int liczba);
+[; ;main.c: 106: unsigned char read_flash(unsigned char adrs_hi,unsigned char adrs_lo);
+[; ;main.c: 107: void unlock_flash(void);
+[; ;main.c: 108: void write_flash(unsigned char adr_hi,unsigned char adr_lo, unsigned char data_lo);
+[; ;main.c: 109: void erase_flash(unsigned char adr_hi,unsigned char adr_lo);
+"138
 [v _cyfry `Cuc ~T0 @X0 -> 15 `i e ]
 [i _cyfry
 :U ..
-"132
--> | | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 4 `i << -> 1 `i -> 5 `i `uc
-"133
--> | << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i `uc
-"134
--> | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 3 `i << -> 1 `i -> 4 `i << -> 1 `i -> 6 `i `uc
-"135
--> | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 6 `i `uc
-"136
--> | | | << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `uc
-"137
--> | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `uc
-"138
--> | | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 4 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `uc
 "139
--> | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i `uc
+-> | | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 4 `i << -> 1 `i -> 5 `i `uc
 "140
--> | | | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 4 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `uc
+-> | << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i `uc
 "141
--> | | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `uc
+-> | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 3 `i << -> 1 `i -> 4 `i << -> 1 `i -> 6 `i `uc
 "142
--> -> 0 `i `uc
+-> | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 6 `i `uc
 "143
--> << -> 1 `i -> 6 `i `uc
+-> | | | << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `uc
 "144
--> | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `uc
+-> | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `uc
 "145
--> | | << -> 1 `i -> 4 `i << -> 1 `i -> 3 `i << -> 1 `i -> 2 `i `uc
+-> | | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 4 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `uc
+"146
+-> | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i `uc
 "147
+-> | | | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 4 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `uc
+"148
+-> | | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `uc
+"149
+-> -> 0 `i `uc
+"150
+-> << -> 1 `i -> 6 `i `uc
+"151
+-> | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `uc
+"152
+-> | | << -> 1 `i -> 4 `i << -> 1 `i -> 3 `i << -> 1 `i -> 2 `i `uc
+"154
 -> << -> 1 `i -> 6 `i `uc
 ..
 ]
-[; ;main.c: 131: const unsigned char cyfry[15] = {
-[; ;main.c: 132: ((1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<4)|(1<<5)),
-[; ;main.c: 133: ((1<<1)|(1<<2)),
-[; ;main.c: 134: ((1<<0)|(1<<1)|(1<<3)|(1<<4)|(1<<6)),
-[; ;main.c: 135: ((1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<6)),
-[; ;main.c: 136: ((1<<1)|(1<<2)|(1<<5)|(1<<6)),
-[; ;main.c: 137: ((1<<0)|(1<<2)|(1<<3)|(1<<5)|(1<<6)),
-[; ;main.c: 138: ((1<<0)|(1<<2)|(1<<3)|(1<<4)|(1<<5)|(1<<6)),
-[; ;main.c: 139: ((1<<0)|(1<<1)|(1<<2)),
-[; ;main.c: 140: ((1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<4)|(1<<5)|(1<<6)),
-[; ;main.c: 141: ((1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<5)|(1<<6)),
-[; ;main.c: 142: 0,
-[; ;main.c: 143: (1<<6),
-[; ;main.c: 144: ((1<<0)|(1<<1)|(1<<5)|(1<<6)),
-[; ;main.c: 145: ((1<<4)|(1<<3)|(1<<2)),
-[; ;main.c: 146: ((1<<6))
-[; ;main.c: 147: };
-"149
+[; ;main.c: 138: const unsigned char cyfry[15] = {
+[; ;main.c: 139: ((1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<4)|(1<<5)),
+[; ;main.c: 140: ((1<<1)|(1<<2)),
+[; ;main.c: 141: ((1<<0)|(1<<1)|(1<<3)|(1<<4)|(1<<6)),
+[; ;main.c: 142: ((1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<6)),
+[; ;main.c: 143: ((1<<1)|(1<<2)|(1<<5)|(1<<6)),
+[; ;main.c: 144: ((1<<0)|(1<<2)|(1<<3)|(1<<5)|(1<<6)),
+[; ;main.c: 145: ((1<<0)|(1<<2)|(1<<3)|(1<<4)|(1<<5)|(1<<6)),
+[; ;main.c: 146: ((1<<0)|(1<<1)|(1<<2)),
+[; ;main.c: 147: ((1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<4)|(1<<5)|(1<<6)),
+[; ;main.c: 148: ((1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<5)|(1<<6)),
+[; ;main.c: 149: 0,
+[; ;main.c: 150: (1<<6),
+[; ;main.c: 151: ((1<<0)|(1<<1)|(1<<5)|(1<<6)),
+[; ;main.c: 152: ((1<<4)|(1<<3)|(1<<2)),
+[; ;main.c: 153: ((1<<6))
+[; ;main.c: 154: };
+"156
 [v _an `Cuc ~T0 @X0 -> 2 `i e ]
 [i _an
 :U ..
@@ -2333,1373 +2351,1642 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 2 `i `uc
 ..
 ]
-[; ;main.c: 149: const unsigned char an[2] = {0b00000001, 0b00000010 };
-"153
+[; ;main.c: 156: const unsigned char an[2] = {0b00000001, 0b00000010 };
+"160
 [v _main `(i ~T0 @X0 1 ef2`i`**uc ]
 {
-[; ;main.c: 153: int main(int argc, char** argv) {
+[; ;main.c: 160: int main(int argc, char** argv) {
 [e :U _main ]
 [v _argc `i ~T0 @X0 1 r1 ]
 [v _argv `**uc ~T0 @X0 1 r2 ]
 [f ]
-[; ;main.c: 156: OSCCONbits.IRCF0 = 0;
-"156
-[e = . . _OSCCONbits 1 3 -> -> 0 `i `uc ]
-[; ;main.c: 157: OSCCONbits.IRCF1 = 1;
-"157
-[e = . . _OSCCONbits 1 4 -> -> 1 `i `uc ]
-[; ;main.c: 158: OSCCONbits.IRCF2 = 1;
-"158
-[e = . . _OSCCONbits 1 5 -> -> 1 `i `uc ]
-[; ;main.c: 159: OSCCONbits.IRCF3 = 1;
-"159
-[e = . . _OSCCONbits 1 6 -> -> 1 `i `uc ]
-[; ;main.c: 163: WDTCONbits.WDTPS0=0;
+[; ;main.c: 163: OSCCONbits.IRCF0 = 0;
 "163
-[e = . . _WDTCONbits 1 1 -> -> 0 `i `uc ]
-[; ;main.c: 164: WDTCONbits.WDTPS1=0;
+[e = . . _OSCCONbits 1 3 -> -> 0 `i `uc ]
+[; ;main.c: 164: OSCCONbits.IRCF1 = 1;
 "164
-[e = . . _WDTCONbits 1 2 -> -> 0 `i `uc ]
-[; ;main.c: 165: WDTCONbits.WDTPS2=1;
+[e = . . _OSCCONbits 1 4 -> -> 1 `i `uc ]
+[; ;main.c: 165: OSCCONbits.IRCF2 = 1;
 "165
-[e = . . _WDTCONbits 1 3 -> -> 1 `i `uc ]
-[; ;main.c: 166: WDTCONbits.WDTPS3=1;
+[e = . . _OSCCONbits 1 5 -> -> 1 `i `uc ]
+[; ;main.c: 166: OSCCONbits.IRCF3 = 1;
 "166
-[e = . . _WDTCONbits 1 4 -> -> 1 `i `uc ]
-[; ;main.c: 167: WDTCONbits.WDTPS4=0;
-"167
-[e = . . _WDTCONbits 1 5 -> -> 0 `i `uc ]
-[; ;main.c: 171: OPTION_REGbits.PS0=0;
+[e = . . _OSCCONbits 1 6 -> -> 1 `i `uc ]
+[; ;main.c: 170: WDTCONbits.WDTPS0=0;
+"170
+[e = . . _WDTCONbits 1 1 -> -> 0 `i `uc ]
+[; ;main.c: 171: WDTCONbits.WDTPS1=0;
 "171
-[e = . . _OPTION_REGbits 1 0 -> -> 0 `i `uc ]
-[; ;main.c: 172: OPTION_REGbits.PS1=1;
+[e = . . _WDTCONbits 1 2 -> -> 0 `i `uc ]
+[; ;main.c: 172: WDTCONbits.WDTPS2=1;
 "172
-[e = . . _OPTION_REGbits 1 1 -> -> 1 `i `uc ]
-[; ;main.c: 173: OPTION_REGbits.PS2=0;
+[e = . . _WDTCONbits 1 3 -> -> 1 `i `uc ]
+[; ;main.c: 173: WDTCONbits.WDTPS3=1;
 "173
-[e = . . _OPTION_REGbits 1 2 -> -> 0 `i `uc ]
-[; ;main.c: 174: OPTION_REGbits.TMR0CS = 0;
+[e = . . _WDTCONbits 1 4 -> -> 1 `i `uc ]
+[; ;main.c: 174: WDTCONbits.WDTPS4=0;
 "174
-[e = . . _OPTION_REGbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 175: OPTION_REGbits.PSA = 0;
-"175
-[e = . . _OPTION_REGbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 177: INTCONbits.TMR0IE = 1;
-"177
-[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
-[; ;main.c: 178: INTCONbits.GIE = 1;
+[e = . . _WDTCONbits 1 5 -> -> 0 `i `uc ]
+[; ;main.c: 178: OPTION_REGbits.PS0=0;
 "178
-[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-[; ;main.c: 185: ANSELAbits.ANSA0 = 0;
+[e = . . _OPTION_REGbits 1 0 -> -> 0 `i `uc ]
+[; ;main.c: 179: OPTION_REGbits.PS1=1;
+"179
+[e = . . _OPTION_REGbits 1 1 -> -> 1 `i `uc ]
+[; ;main.c: 180: OPTION_REGbits.PS2=0;
+"180
+[e = . . _OPTION_REGbits 1 2 -> -> 0 `i `uc ]
+[; ;main.c: 181: OPTION_REGbits.TMR0CS = 0;
+"181
+[e = . . _OPTION_REGbits 0 3 -> -> 0 `i `uc ]
+[; ;main.c: 182: OPTION_REGbits.PSA = 0;
+"182
+[e = . . _OPTION_REGbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 184: INTCONbits.TMR0IE = 1;
+"184
+[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+[; ;main.c: 185: INTCONbits.GIE = 1;
 "185
-[e = . . _ANSELAbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 186: ANSELAbits.ANSA1 = 0;
-"186
-[e = . . _ANSELAbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 187: ANSELAbits.ANSA2 = 0;
-"187
-[e = . . _ANSELAbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 188: ANSELAbits.ANSA3 = 0;
-"188
-[e = . . _ANSELAbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 189: ANSELAbits.ANSA5 = 0;
-"189
-[e = . . _ANSELAbits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 192: TRISAbits.TRISA0 = 0;
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+[; ;main.c: 192: ANSELAbits.ANSA0 = 0;
 "192
-[e = . . _TRISAbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 193: TRISAbits.TRISA1 = 0;
+[e = . . _ANSELAbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 193: ANSELAbits.ANSA1 = 0;
 "193
-[e = . . _TRISAbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 194: TRISAbits.TRISA2 = 0;
+[e = . . _ANSELAbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 194: ANSELAbits.ANSA2 = 0;
 "194
-[e = . . _TRISAbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 195: TRISAbits.TRISA3 = 0;
+[e = . . _ANSELAbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 195: ANSELAbits.ANSA3 = 0;
 "195
-[e = . . _TRISAbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 196: TRISAbits.TRISA4 = 0;
+[e = . . _ANSELAbits 0 3 -> -> 0 `i `uc ]
+[; ;main.c: 196: ANSELAbits.ANSA5 = 0;
 "196
-[e = . . _TRISAbits 0 4 -> -> 0 `i `uc ]
-[; ;main.c: 197: TRISAbits.TRISA5 = 0;
-"197
-[e = . . _TRISAbits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 198: TRISAbits.TRISA6 = 0;
-"198
-[e = . . _TRISAbits 0 6 -> -> 0 `i `uc ]
-[; ;main.c: 199: TRISAbits.TRISA7 = 0;
-"199
-[e = . . _TRISAbits 0 7 -> -> 0 `i `uc ]
-[; ;main.c: 202: LATAbits.LATA0 = 0;
-"202
-[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 203: LATAbits.LATA1 = 0;
-"203
-[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 204: LATAbits.LATA2 = 0;
-"204
-[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 205: LATAbits.LATA3 = 0;
-"205
-[e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 206: LATAbits.LATA4 = 0;
-"206
-[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
-[; ;main.c: 207: LATAbits.LATA5 = 0;
-"207
-[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 208: LATAbits.LATA6 = 0;
-"208
-[e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
-[; ;main.c: 209: LATAbits.LATA7 = 0;
-"209
-[e = . . _LATAbits 0 7 -> -> 0 `i `uc ]
-[; ;main.c: 214: ANSELBbits.ANSB0 = 0;
-"214
-[e = . . _ANSELBbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 215: ANSELBbits.ANSB1 = 0;
-"215
-[e = . . _ANSELBbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 218: TRISBbits.TRISB0 = 0;
-"218
-[e = . . _TRISBbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 219: TRISBbits.TRISB1 = 0;
-"219
-[e = . . _TRISBbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 221: LATBbits.LATB0 = 0;
-"221
-[e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 222: LATBbits.LATB1 = 0;
-"222
-[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 226: ANSELBbits.ANSB2 = 0;
-"226
-[e = . . _ANSELBbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 227: ANSELBbits.ANSB3 = 0;
-"227
-[e = . . _ANSELBbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 228: ANSELBbits.ANSB4 = 0;
-"228
-[e = . . _ANSELBbits 0 4 -> -> 0 `i `uc ]
-[; ;main.c: 229: ANSELBbits.ANSB5 = 0;
-"229
-[e = . . _ANSELBbits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 231: TRISBbits.TRISB4 = 0;
-"231
-[e = . . _TRISBbits 0 4 -> -> 0 `i `uc ]
-[; ;main.c: 234: TRISBbits.TRISB2 = 1;
-"234
-[e = . . _TRISBbits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 235: TRISBbits.TRISB3 = 1;
-"235
-[e = . . _TRISBbits 0 3 -> -> 1 `i `uc ]
-[; ;main.c: 236: TRISBbits.TRISB4 = 1;
-"236
-[e = . . _TRISBbits 0 4 -> -> 1 `i `uc ]
-[; ;main.c: 237: TRISBbits.TRISB5 = 1;
-"237
-[e = . . _TRISBbits 0 5 -> -> 1 `i `uc ]
-[; ;main.c: 238: TRISBbits.TRISB6 = 1;
-"238
-[e = . . _TRISBbits 0 6 -> -> 1 `i `uc ]
-[; ;main.c: 239: TRISBbits.TRISB7 = 1;
-"239
-[e = . . _TRISBbits 0 7 -> -> 1 `i `uc ]
-[; ;main.c: 242: OPTION_REGbits.nWPUEN = 0;
-"242
-[e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 243: WPUBbits.WPUB3 = 1;
-"243
-[e = . . _WPUBbits 0 3 -> -> 1 `i `uc ]
-[; ;main.c: 244: WPUBbits.WPUB4 = 1;
-"244
-[e = . . _WPUBbits 0 4 -> -> 1 `i `uc ]
-[; ;main.c: 248: TRISC = 0;
-"248
-[e = _TRISC -> -> 0 `i `uc ]
-[; ;main.c: 249: LATC = 0;
-"249
-[e = _LATC -> -> 0 `i `uc ]
-[; ;main.c: 250: ANSELC = 0;
-"250
-[e = _ANSELC -> -> 0 `i `uc ]
-[; ;main.c: 253: ANSELAbits.ANSA5 = 0;
-"253
 [e = . . _ANSELAbits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 254: TRISAbits.TRISA5 = 0;
-"254
+[; ;main.c: 199: TRISAbits.TRISA0 = 0;
+"199
+[e = . . _TRISAbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 200: TRISAbits.TRISA1 = 0;
+"200
+[e = . . _TRISAbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 201: TRISAbits.TRISA2 = 0;
+"201
+[e = . . _TRISAbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 202: TRISAbits.TRISA3 = 0;
+"202
+[e = . . _TRISAbits 0 3 -> -> 0 `i `uc ]
+[; ;main.c: 203: TRISAbits.TRISA4 = 0;
+"203
+[e = . . _TRISAbits 0 4 -> -> 0 `i `uc ]
+[; ;main.c: 204: TRISAbits.TRISA5 = 0;
+"204
 [e = . . _TRISAbits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 255: LATAbits.LATA5 = 0;
-"255
+[; ;main.c: 205: TRISAbits.TRISA6 = 0;
+"205
+[e = . . _TRISAbits 0 6 -> -> 0 `i `uc ]
+[; ;main.c: 206: TRISAbits.TRISA7 = 0;
+"206
+[e = . . _TRISAbits 0 7 -> -> 0 `i `uc ]
+[; ;main.c: 209: LATAbits.LATA0 = 0;
+"209
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 210: LATAbits.LATA1 = 0;
+"210
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 211: LATAbits.LATA2 = 0;
+"211
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 212: LATAbits.LATA3 = 0;
+"212
+[e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
+[; ;main.c: 213: LATAbits.LATA4 = 0;
+"213
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+[; ;main.c: 214: LATAbits.LATA5 = 0;
+"214
 [e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 258: FVRCONbits.TSEN = 1;
-"258
-[e = . . _FVRCONbits 0 3 -> -> 1 `i `uc ]
-[; ;main.c: 259: FVRCONbits.FVREN = 0;
-"259
-[e = . . _FVRCONbits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 260: FVRCONbits.TSRNG = 1;
+[; ;main.c: 215: LATAbits.LATA6 = 0;
+"215
+[e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
+[; ;main.c: 216: LATAbits.LATA7 = 0;
+"216
+[e = . . _LATAbits 0 7 -> -> 0 `i `uc ]
+[; ;main.c: 221: ANSELBbits.ANSB0 = 0;
+"221
+[e = . . _ANSELBbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 222: ANSELBbits.ANSB1 = 0;
+"222
+[e = . . _ANSELBbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 225: TRISBbits.TRISB0 = 0;
+"225
+[e = . . _TRISBbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 226: TRISBbits.TRISB1 = 0;
+"226
+[e = . . _TRISBbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 228: LATBbits.LATB0 = 0;
+"228
+[e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 229: LATBbits.LATB1 = 0;
+"229
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 233: ANSELBbits.ANSB2 = 0;
+"233
+[e = . . _ANSELBbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 234: ANSELBbits.ANSB3 = 0;
+"234
+[e = . . _ANSELBbits 0 3 -> -> 0 `i `uc ]
+[; ;main.c: 235: ANSELBbits.ANSB4 = 0;
+"235
+[e = . . _ANSELBbits 0 4 -> -> 0 `i `uc ]
+[; ;main.c: 236: ANSELBbits.ANSB5 = 0;
+"236
+[e = . . _ANSELBbits 0 5 -> -> 0 `i `uc ]
+[; ;main.c: 238: TRISBbits.TRISB4 = 0;
+"238
+[e = . . _TRISBbits 0 4 -> -> 0 `i `uc ]
+[; ;main.c: 241: TRISBbits.TRISB2 = 1;
+"241
+[e = . . _TRISBbits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 242: TRISBbits.TRISB3 = 1;
+"242
+[e = . . _TRISBbits 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 243: TRISBbits.TRISB4 = 1;
+"243
+[e = . . _TRISBbits 0 4 -> -> 1 `i `uc ]
+[; ;main.c: 244: TRISBbits.TRISB5 = 1;
+"244
+[e = . . _TRISBbits 0 5 -> -> 1 `i `uc ]
+[; ;main.c: 245: TRISBbits.TRISB6 = 1;
+"245
+[e = . . _TRISBbits 0 6 -> -> 1 `i `uc ]
+[; ;main.c: 246: TRISBbits.TRISB7 = 1;
+"246
+[e = . . _TRISBbits 0 7 -> -> 1 `i `uc ]
+[; ;main.c: 249: OPTION_REGbits.nWPUEN = 0;
+"249
+[e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
+[; ;main.c: 250: WPUBbits.WPUB3 = 1;
+"250
+[e = . . _WPUBbits 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 251: WPUBbits.WPUB4 = 1;
+"251
+[e = . . _WPUBbits 0 4 -> -> 1 `i `uc ]
+[; ;main.c: 255: TRISC = 0;
+"255
+[e = _TRISC -> -> 0 `i `uc ]
+[; ;main.c: 256: LATC = 0;
+"256
+[e = _LATC -> -> 0 `i `uc ]
+[; ;main.c: 257: ANSELC = 0;
+"257
+[e = _ANSELC -> -> 0 `i `uc ]
+[; ;main.c: 260: ANSELAbits.ANSA5 = 0;
 "260
-[e = . . _FVRCONbits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 262: ADCON0bits.ADON = 1;
+[e = . . _ANSELAbits 0 5 -> -> 0 `i `uc ]
+[; ;main.c: 261: TRISAbits.TRISA5 = 0;
+"261
+[e = . . _TRISAbits 0 5 -> -> 0 `i `uc ]
+[; ;main.c: 262: LATAbits.LATA5 = 0;
 "262
-[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
-[; ;main.c: 263: ADCON0bits.CHS = 0b11110;
-"263
-[e = . . _ADCON0bits 0 2 -> -> 30 `i `uc ]
-[; ;main.c: 264: ADCON1 |= 0b10000000;
-"264
-[e =| _ADCON1 -> -> 128 `i `uc ]
-[; ;main.c: 267: x=0;
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+[; ;main.c: 265: FVRCONbits.TSEN = 1;
+"265
+[e = . . _FVRCONbits 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 266: FVRCONbits.FVREN = 0;
+"266
+[e = . . _FVRCONbits 0 5 -> -> 0 `i `uc ]
+[; ;main.c: 267: FVRCONbits.TSRNG = 1;
 "267
-[e = _x -> -> 0 `i `uc ]
-[; ;main.c: 268: flaga_temp = 0;
-"268
-[e = _flaga_temp -> -> 0 `i `uc ]
-[; ;main.c: 270: cyf_1 = 0;
+[e = . . _FVRCONbits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 269: ADCON0bits.ADON = 1;
+"269
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 270: ADCON0bits.CHS = 0b11110;
 "270
-[e = _cyf_1 -> -> 0 `i `uc ]
-[; ;main.c: 271: cyf_2 = 0;
+[e = . . _ADCON0bits 0 2 -> -> 30 `i `uc ]
+[; ;main.c: 271: ADCON1 |= 0b10000000;
 "271
-[e = _cyf_2 -> -> 0 `i `uc ]
-[; ;main.c: 272: cyf_3 = 0;
-"272
-[e = _cyf_3 -> -> 0 `i `uc ]
-[; ;main.c: 273: kro_1 = 0;
-"273
-[e = _kro_1 -> -> 0 `i `uc ]
-[; ;main.c: 274: kro_2 = 0;
+[e =| _ADCON1 -> -> 128 `i `uc ]
+[; ;main.c: 274: x=0;
 "274
-[e = _kro_2 -> -> 0 `i `uc ]
-[; ;main.c: 275: kro_3 = 0;
+[e = _x -> -> 0 `i `uc ]
+[; ;main.c: 275: flaga_temp = 0;
 "275
-[e = _kro_3 -> -> 0 `i `uc ]
-[; ;main.c: 277: timer5 = 5000;
+[e = _flaga_temp -> -> 0 `i `uc ]
+[; ;main.c: 277: cyf_1 = 0;
 "277
-[e = _timer5 -> -> -> 5000 `i `l `ul ]
-[; ;main.c: 279: START = 0;
+[e = _cyf_1 -> -> 0 `i `uc ]
+[; ;main.c: 278: cyf_2 = 0;
+"278
+[e = _cyf_2 -> -> 0 `i `uc ]
+[; ;main.c: 279: cyf_3 = 0;
 "279
-[e = _START -> -> 0 `i `uc ]
-[; ;main.c: 280: czas_przerwa_ms = 100;
+[e = _cyf_3 -> -> 0 `i `uc ]
+[; ;main.c: 280: kro_1 = 0;
 "280
-[e = _czas_przerwa_ms -> -> 100 `i `uc ]
-[; ;main.c: 281: czas_s_reset = 15;
+[e = _kro_1 -> -> 0 `i `uc ]
+[; ;main.c: 281: kro_2 = 0;
 "281
-[e = _czas_s_reset -> -> 15 `i `ui ]
-[; ;main.c: 285: grzalka_numer = 1;
-"285
-[e = _grzalka_numer -> -> 1 `i `uc ]
-[; ;main.c: 286: START_Fl = 0;
+[e = _kro_2 -> -> 0 `i `uc ]
+[; ;main.c: 282: kro_3 = 0;
+"282
+[e = _kro_3 -> -> 0 `i `uc ]
+[; ;main.c: 284: timer5 = 5000;
+"284
+[e = _timer5 -> -> -> 5000 `i `l `ul ]
+[; ;main.c: 286: START = 0;
 "286
-[e = _START_Fl -> -> 0 `i `uc ]
-[; ;main.c: 289: cyf_1 = 14;
-"289
-[e = _cyf_1 -> -> 14 `i `uc ]
-[; ;main.c: 290: cyf_2 = 14;
-"290
-[e = _cyf_2 -> -> 14 `i `uc ]
-[; ;main.c: 291: kro_1 = 1;
-"291
-[e = _kro_1 -> -> 1 `i `uc ]
-[; ;main.c: 292: kro_2 = 1;
+[e = _START -> -> 0 `i `uc ]
+[; ;main.c: 287: czas_s_reset = 10;
+"287
+[e = _czas_s_reset -> -> 10 `i `ui ]
+[; ;main.c: 288: czas_przerwa_ms = 100;
+"288
+[e = _czas_przerwa_ms -> -> 100 `i `uc ]
+[; ;main.c: 292: grzalka_numer = 1;
 "292
-[e = _kro_2 -> -> 1 `i `uc ]
-[; ;main.c: 293: _delay((unsigned long)((1000)*(8000000/4000.0)));
+[e = _grzalka_numer -> -> 1 `i `uc ]
+[; ;main.c: 293: START_Fl = 0;
 "293
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 295: flash_low = read_flash(adr_hi, adr_low);
-"295
-[e = _flash_low ( _read_flash (2 , _adr_hi _adr_low ]
-[; ;main.c: 296: flash_hi = (read_flash(adr_hi, adr_low2) & 0x3fff );
+[e = _START_Fl -> -> 0 `i `uc ]
+[; ;main.c: 296: cyf_1 = 14;
 "296
-[e = _flash_hi -> & -> ( _read_flash (2 , _adr_hi _adr_low2 `i -> 16383 `i `uc ]
-[; ;main.c: 299: if ( (flash_low == 0xFF) && (flash_hi == 0xFF)) {
+[e = _cyf_1 -> -> 14 `i `uc ]
+[; ;main.c: 297: cyf_2 = 14;
+"297
+[e = _cyf_2 -> -> 14 `i `uc ]
+[; ;main.c: 298: kro_1 = 1;
+"298
+[e = _kro_1 -> -> 1 `i `uc ]
+[; ;main.c: 299: kro_2 = 1;
 "299
-[e $ ! && == -> _flash_low `i -> 255 `i == -> _flash_hi `i -> 255 `i 239  ]
-{
-[; ;main.c: 300: flash_low = 0;
+[e = _kro_2 -> -> 1 `i `uc ]
+[; ;main.c: 300: _delay((unsigned long)((1000)*(8000000/4000.0)));
 "300
-[e = _flash_low -> -> 0 `i `uc ]
-[; ;main.c: 301: flash_hi = 0;
-"301
-[e = _flash_hi -> -> 0 `i `uc ]
-[; ;main.c: 302: czas_flash = 0;
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 302: flash_low = read_flash(adr_hi, adr_low);
 "302
-[e = _czas_flash -> -> 0 `i `ui ]
+[e = _flash_low ( _read_flash (2 , _adr_hi _adr_low ]
+[; ;main.c: 303: flash_hi = (read_flash(adr_hi, adr_low2) & 0x3fff );
 "303
+[e = _flash_hi -> & -> ( _read_flash (2 , _adr_hi _adr_low2 `i -> 16383 `i `uc ]
+[; ;main.c: 305: flash_moc = read_flash(adr_hi, adr_moc);
+"305
+[e = _flash_moc ( _read_flash (2 , _adr_hi _adr_moc ]
+[; ;main.c: 306: if (flash_moc!=166) {
+"306
+[e $ ! != -> _flash_moc `i -> 166 `i 239  ]
+{
+[; ;main.c: 307: moc = 0;
+"307
+[e = _moc -> -> 0 `i `uc ]
+[; ;main.c: 308: flash_moc = 0;
+"308
+[e = _flash_moc -> -> 0 `i `uc ]
+"309
 }
-[; ;main.c: 303: }else{
+[; ;main.c: 309: }else{
 [e $U 240  ]
 [e :U 239 ]
 {
-[; ;main.c: 304: czas_s = flash_hi ;
-"304
-[e = _czas_s -> _flash_hi `ui ]
-[; ;main.c: 305: czas_s = (czas_s<<8);
-"305
-[e = _czas_s << _czas_s -> 8 `i ]
-[; ;main.c: 306: czas_s|= flash_low;
-"306
-[e =| _czas_s -> _flash_low `ui ]
-[; ;main.c: 309: czas_flash = czas_s;
-"309
-[e = _czas_flash _czas_s ]
+[; ;main.c: 310: moc=166;
 "310
+[e = _moc -> -> 166 `i `uc ]
+"311
 }
 [e :U 240 ]
-[; ;main.c: 310: }
-[; ;main.c: 313: if (czas_s == 0) {
-"313
-[e $ ! == _czas_s -> -> 0 `i `ui 241  ]
-{
-[; ;main.c: 314: czas_s = czas_s_reset;
-"314
-[e = _czas_s _czas_s_reset ]
+[; ;main.c: 311: }
+[; ;main.c: 315: if ( (flash_low == 0xFF) && (flash_hi == 0xFF)) {
 "315
-}
-[e :U 241 ]
-[; ;main.c: 315: }
-[; ;main.c: 317: while(1){
+[e $ ! && == -> _flash_low `i -> 255 `i == -> _flash_hi `i -> 255 `i 241  ]
+{
+[; ;main.c: 316: flash_low = 0;
+"316
+[e = _flash_low -> -> 0 `i `uc ]
+[; ;main.c: 317: flash_hi = 0;
 "317
-[e :U 243 ]
+[e = _flash_hi -> -> 0 `i `uc ]
+[; ;main.c: 318: czas_flash = 0;
+"318
+[e = _czas_flash -> -> 0 `i `ui ]
+"319
+}
+[; ;main.c: 319: }else{
+[e $U 242  ]
+[e :U 241 ]
 {
-[; ;main.c: 320: if (czas_s > 1800) {
+[; ;main.c: 320: czas_s = flash_hi ;
 "320
-[e $ ! > _czas_s -> -> 1800 `i `ui 245  ]
-{
-[; ;main.c: 321: czas_s = 1800;
+[e = _czas_s -> _flash_hi `ui ]
+[; ;main.c: 321: czas_s = (czas_s<<8);
 "321
-[e = _czas_s -> -> 1800 `i `ui ]
+[e = _czas_s << _czas_s -> 8 `i ]
+[; ;main.c: 322: czas_s|= flash_low;
 "322
-}
-[e :U 245 ]
-[; ;main.c: 322: }
-[; ;main.c: 323: if (czas_s < 1) {
-"323
-[e $ ! < _czas_s -> -> 1 `i `ui 246  ]
-{
-[; ;main.c: 324: czas_s = 1;
-"324
-[e = _czas_s -> -> 1 `i `ui ]
+[e =| _czas_s -> _flash_low `ui ]
+[; ;main.c: 325: czas_flash = czas_s;
 "325
+[e = _czas_flash _czas_s ]
+"326
 }
-[e :U 246 ]
-[; ;main.c: 325: }
-[; ;main.c: 328: if ( (PORTBbits.RB3 == 0) && (PORTBbits.RB4 == 1 ) && ( START == 0 )){
-"328
-[e $ ! && && == -> . . _PORTBbits 0 3 `i -> 0 `i == -> . . _PORTBbits 0 4 `i -> 1 `i == -> _START `i -> 0 `i 247  ]
-{
-[; ;main.c: 329: if (przycisk_plus_flag == 0 ){
+[e :U 242 ]
+[; ;main.c: 326: }
+[; ;main.c: 329: if (czas_s == 0) {
 "329
-[e $ ! == -> _przycisk_plus_flag `i -> 0 `i 248  ]
+[e $ ! == _czas_s -> -> 0 `i `ui 243  ]
 {
-[; ;main.c: 330: _delay((unsigned long)((50)*(8000000/4000.0)));
+[; ;main.c: 330: czas_s = czas_s_reset;
 "330
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[e = _czas_s _czas_s_reset ]
 "331
 }
-[e :U 248 ]
+[e :U 243 ]
 [; ;main.c: 331: }
-[; ;main.c: 332: if ( (PORTBbits.RB3 == 0) && (przycisk_plus_flag == 0) ) {
-"332
-[e $ ! && == -> . . _PORTBbits 0 3 `i -> 0 `i == -> _przycisk_plus_flag `i -> 0 `i 249  ]
-{
-[; ;main.c: 333: czas_s++;
+[; ;main.c: 333: while(1){
 "333
-[e ++ _czas_s -> -> 1 `i `ui ]
-[; ;main.c: 334: przycisk_plus_flag = 1;
-"334
-[e = _przycisk_plus_flag -> -> 1 `i `uc ]
-"335
-}
-[e :U 249 ]
-"336
-}
-[; ;main.c: 335: }
-[; ;main.c: 336: }else{
-[e $U 250  ]
-[e :U 247 ]
+[e :U 245 ]
 {
-[; ;main.c: 337: przycisk_plus_flag = 0;
+[; ;main.c: 336: if (czas_s > 1800) {
+"336
+[e $ ! > _czas_s -> -> 1800 `i `ui 247  ]
+{
+[; ;main.c: 337: czas_s = 1800;
 "337
-[e = _przycisk_plus_flag -> -> 0 `i `uc ]
-[; ;main.c: 338: timer1 = 1500;
+[e = _czas_s -> -> 1800 `i `ui ]
 "338
-[e = _timer1 -> -> 1500 `i `ui ]
+}
+[e :U 247 ]
+[; ;main.c: 338: }
+[; ;main.c: 339: if (czas_s < 1) {
 "339
+[e $ ! < _czas_s -> -> 1 `i `ui 248  ]
+{
+[; ;main.c: 340: czas_s = 1;
+"340
+[e = _czas_s -> -> 1 `i `ui ]
+"341
+}
+[e :U 248 ]
+[; ;main.c: 341: }
+[; ;main.c: 344: if ( (PORTBbits.RB3 == 0) && (PORTBbits.RB4 == 1 ) && ( START == 0 )){
+"344
+[e $ ! && && == -> . . _PORTBbits 0 3 `i -> 0 `i == -> . . _PORTBbits 0 4 `i -> 1 `i == -> _START `i -> 0 `i 249  ]
+{
+[; ;main.c: 345: if (przycisk_plus_flag == 0 ){
+"345
+[e $ ! == -> _przycisk_plus_flag `i -> 0 `i 250  ]
+{
+[; ;main.c: 346: _delay((unsigned long)((50)*(8000000/4000.0)));
+"346
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"347
 }
 [e :U 250 ]
-[; ;main.c: 339: }
-[; ;main.c: 341: if ( (timer1 == 0) && (przycisk_plus_flag == 1) ) {
-"341
-[e $ ! && == _timer1 -> -> 0 `i `ui == -> _przycisk_plus_flag `i -> 1 `i 251  ]
-{
-[; ;main.c: 342: czas_s++;
-"342
-[e ++ _czas_s -> -> 1 `i `ui ]
-[; ;main.c: 343: _delay((unsigned long)((10)*(8000000/4000.0)));
-"343
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"344
-}
-[e :U 251 ]
-[; ;main.c: 344: }
-[; ;main.c: 348: if ( (PORTBbits.RB3 == 1) && (PORTBbits.RB4 == 0 ) && ( START == 0 )){
+[; ;main.c: 347: }
+[; ;main.c: 348: if ( (PORTBbits.RB3 == 0) && (przycisk_plus_flag == 0) ) {
 "348
-[e $ ! && && == -> . . _PORTBbits 0 3 `i -> 1 `i == -> . . _PORTBbits 0 4 `i -> 0 `i == -> _START `i -> 0 `i 252  ]
+[e $ ! && == -> . . _PORTBbits 0 3 `i -> 0 `i == -> _przycisk_plus_flag `i -> 0 `i 251  ]
 {
-[; ;main.c: 349: if (przycisk_minus_flag == 0 ){
+[; ;main.c: 349: czas_s++;
 "349
-[e $ ! == -> _przycisk_minus_flag `i -> 0 `i 253  ]
-{
-[; ;main.c: 350: _delay((unsigned long)((50)*(8000000/4000.0)));
+[e ++ _czas_s -> -> 1 `i `ui ]
+[; ;main.c: 350: przycisk_plus_flag = 1;
 "350
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[e = _przycisk_plus_flag -> -> 1 `i `uc ]
 "351
 }
-[e :U 253 ]
-[; ;main.c: 351: }
-[; ;main.c: 352: if ( (PORTBbits.RB4 == 0) && (przycisk_minus_flag == 0) ) {
+[e :U 251 ]
 "352
-[e $ ! && == -> . . _PORTBbits 0 4 `i -> 0 `i == -> _przycisk_minus_flag `i -> 0 `i 254  ]
+}
+[; ;main.c: 351: }
+[; ;main.c: 352: }else{
+[e $U 252  ]
+[e :U 249 ]
 {
-[; ;main.c: 353: czas_s--;
+[; ;main.c: 353: przycisk_plus_flag = 0;
 "353
-[e -- _czas_s -> -> 1 `i `ui ]
-[; ;main.c: 354: przycisk_minus_flag = 1;
+[e = _przycisk_plus_flag -> -> 0 `i `uc ]
+[; ;main.c: 354: timer1 = 1500;
 "354
-[e = _przycisk_minus_flag -> -> 1 `i `uc ]
+[e = _timer1 -> -> 1500 `i `ui ]
 "355
 }
-[e :U 254 ]
-"356
-}
-[; ;main.c: 355: }
-[; ;main.c: 356: }else{
-[e $U 255  ]
 [e :U 252 ]
-{
-[; ;main.c: 357: przycisk_minus_flag = 0;
+[; ;main.c: 355: }
+[; ;main.c: 357: if ( (timer1 == 0) && (przycisk_plus_flag == 1) ) {
 "357
-[e = _przycisk_minus_flag -> -> 0 `i `uc ]
-[; ;main.c: 358: timer6 = 1500;
+[e $ ! && == _timer1 -> -> 0 `i `ui == -> _przycisk_plus_flag `i -> 1 `i 253  ]
+{
+[; ;main.c: 358: czas_s++;
 "358
-[e = _timer6 -> -> 1500 `i `ui ]
+[e ++ _czas_s -> -> 1 `i `ui ]
+[; ;main.c: 359: _delay((unsigned long)((10)*(8000000/4000.0)));
 "359
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"360
+}
+[e :U 253 ]
+[; ;main.c: 360: }
+[; ;main.c: 364: if ( (PORTBbits.RB3 == 1) && (PORTBbits.RB4 == 0 ) && ( START == 0 )){
+"364
+[e $ ! && && == -> . . _PORTBbits 0 3 `i -> 1 `i == -> . . _PORTBbits 0 4 `i -> 0 `i == -> _START `i -> 0 `i 254  ]
+{
+[; ;main.c: 365: if (przycisk_minus_flag == 0 ){
+"365
+[e $ ! == -> _przycisk_minus_flag `i -> 0 `i 255  ]
+{
+[; ;main.c: 366: _delay((unsigned long)((50)*(8000000/4000.0)));
+"366
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"367
 }
 [e :U 255 ]
-[; ;main.c: 359: }
-[; ;main.c: 361: if ( (timer6 == 0) && (przycisk_minus_flag == 1) ) {
-"361
-[e $ ! && == _timer6 -> -> 0 `i `ui == -> _przycisk_minus_flag `i -> 1 `i 256  ]
+[; ;main.c: 367: }
+[; ;main.c: 368: if ( (PORTBbits.RB4 == 0) && (przycisk_minus_flag == 0) ) {
+"368
+[e $ ! && == -> . . _PORTBbits 0 4 `i -> 0 `i == -> _przycisk_minus_flag `i -> 0 `i 256  ]
 {
-[; ;main.c: 362: czas_s--;
-"362
+[; ;main.c: 369: czas_s--;
+"369
 [e -- _czas_s -> -> 1 `i `ui ]
-[; ;main.c: 363: _delay((unsigned long)((10)*(8000000/4000.0)));
-"363
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"364
+[; ;main.c: 370: przycisk_minus_flag = 1;
+"370
+[e = _przycisk_minus_flag -> -> 1 `i `uc ]
+"371
 }
 [e :U 256 ]
-[; ;main.c: 364: }
-[; ;main.c: 368: if ( (PORTBbits.RB3 == 0) && (PORTBbits.RB4 == 0 ) && ( START == 0 )){
-"368
-[e $ ! && && == -> . . _PORTBbits 0 3 `i -> 0 `i == -> . . _PORTBbits 0 4 `i -> 0 `i == -> _START `i -> 0 `i 257  ]
-{
-[; ;main.c: 369: _delay((unsigned long)((1000)*(8000000/4000.0)));
-"369
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 370: asm("clrwdt");
-"370
-[; <" clrwdt ;# ">
-[; ;main.c: 371: _delay((unsigned long)((1000)*(8000000/4000.0)));
-"371
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 372: asm("clrwdt");
 "372
-[; <" clrwdt ;# ">
-[; ;main.c: 373: _delay((unsigned long)((1000)*(8000000/4000.0)));
-"373
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 374: asm("clrwdt");
-"374
-[; <" clrwdt ;# ">
-[; ;main.c: 375: if ( (PORTBbits.RB3 == 0) && (PORTBbits.RB4 == 0 )){
-"375
-[e $ ! && == -> . . _PORTBbits 0 3 `i -> 0 `i == -> . . _PORTBbits 0 4 `i -> 0 `i 258  ]
-{
-[; ;main.c: 376: czas_s = czas_s_reset;
-"376
-[e = _czas_s _czas_s_reset ]
-"377
 }
-[e :U 258 ]
-[; ;main.c: 377: }
-[; ;main.c: 378: _delay((unsigned long)((1000)*(8000000/4000.0)));
-"378
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"379
+[; ;main.c: 371: }
+[; ;main.c: 372: }else{
+[e $U 257  ]
+[e :U 254 ]
+{
+[; ;main.c: 373: przycisk_minus_flag = 0;
+"373
+[e = _przycisk_minus_flag -> -> 0 `i `uc ]
+[; ;main.c: 374: timer6 = 1500;
+"374
+[e = _timer6 -> -> 1500 `i `ui ]
+"375
 }
 [e :U 257 ]
-[; ;main.c: 379: }
-[; ;main.c: 384: if ( (czas_s!= czas_flash) && (PORTBbits.RB3 ==1) && (PORTBbits.RB4 == 1) ) {
+[; ;main.c: 375: }
+[; ;main.c: 377: if ( (timer6 == 0) && (przycisk_minus_flag == 1) ) {
+"377
+[e $ ! && == _timer6 -> -> 0 `i `ui == -> _przycisk_minus_flag `i -> 1 `i 258  ]
+{
+[; ;main.c: 378: czas_s--;
+"378
+[e -- _czas_s -> -> 1 `i `ui ]
+[; ;main.c: 379: _delay((unsigned long)((10)*(8000000/4000.0)));
+"379
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"380
+}
+[e :U 258 ]
+[; ;main.c: 380: }
+[; ;main.c: 384: if ( (PORTBbits.RB3 == 0) && (PORTBbits.RB4 == 0 ) && ( START == 0 )){
 "384
-[e $ ! && && != _czas_s _czas_flash == -> . . _PORTBbits 0 3 `i -> 1 `i == -> . . _PORTBbits 0 4 `i -> 1 `i 259  ]
+[e $ ! && && == -> . . _PORTBbits 0 3 `i -> 0 `i == -> . . _PORTBbits 0 4 `i -> 0 `i == -> _START `i -> 0 `i 259  ]
 {
-[; ;main.c: 386: if (timer7<4000) {
+[; ;main.c: 385: _delay((unsigned long)((1000)*(8000000/4000.0)));
+"385
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 386: asm("clrwdt");
 "386
-[e $ ! < _timer7 -> -> 4000 `i `ui 260  ]
-{
-[; ;main.c: 387: kro_1 = 1;
+[; <" clrwdt ;# ">
+[; ;main.c: 387: _delay((unsigned long)((1000)*(8000000/4000.0)));
 "387
-[e = _kro_1 -> -> 1 `i `uc ]
-[; ;main.c: 388: kro_2 = 1;
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 388: asm("clrwdt");
 "388
-[e = _kro_2 -> -> 1 `i `uc ]
+[; <" clrwdt ;# ">
+[; ;main.c: 389: _delay((unsigned long)((1000)*(8000000/4000.0)));
 "389
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 390: asm("clrwdt");
+"390
+[; <" clrwdt ;# ">
+[; ;main.c: 391: if ( (PORTBbits.RB3 == 0) && (PORTBbits.RB4 == 0 )){
+"391
+[e $ ! && == -> . . _PORTBbits 0 3 `i -> 0 `i == -> . . _PORTBbits 0 4 `i -> 0 `i 260  ]
+{
+[; ;main.c: 392: czas_s = czas_s_reset;
+"392
+[e = _czas_s _czas_s_reset ]
+"393
 }
 [e :U 260 ]
-[; ;main.c: 389: }
-[; ;main.c: 392: if (timer7 == 0 ) {
-"392
-[e $ ! == _timer7 -> -> 0 `i `ui 261  ]
-{
-"396
-[v _tmp `uc ~T0 @X0 1 a ]
-[; ;main.c: 396: unsigned char tmp;
-[; ;main.c: 397: tmp = (czas_s & 0x00ff);
-"397
-[e = _tmp -> & _czas_s -> -> 255 `i `ui `uc ]
-[; ;main.c: 398: erase_flash(adr_hi, adr_low);
-"398
-[e ( _erase_flash (2 , _adr_hi _adr_low ]
-[; ;main.c: 399: write_flash(adr_hi, adr_low, tmp );
-"399
-[e ( _write_flash (3 , , _adr_hi _adr_low _tmp ]
-[; ;main.c: 400: tmp = ((czas_s >>8)&0x00ff);
-"400
-[e = _tmp -> & >> _czas_s -> 8 `i -> -> 255 `i `ui `uc ]
-[; ;main.c: 401: write_flash(adr_hi, adr_low2, tmp);
-"401
-[e ( _write_flash (3 , , _adr_hi _adr_low2 _tmp ]
-[; ;main.c: 403: flash_low = read_flash(adr_hi, adr_low);
-"403
-[e = _flash_low ( _read_flash (2 , _adr_hi _adr_low ]
-[; ;main.c: 404: flash_hi = (read_flash(adr_hi, adr_low2) );
-"404
-[e = _flash_hi ( _read_flash (2 , _adr_hi _adr_low2 ]
-[; ;main.c: 407: czas_flash = czas_s;
-"407
-[e = _czas_flash _czas_s ]
-[; ;main.c: 408: timer7 = 5000;
-"408
-[e = _timer7 -> -> 5000 `i `ui ]
-"409
+[; ;main.c: 393: }
+[; ;main.c: 394: _delay((unsigned long)((1000)*(8000000/4000.0)));
+"394
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"395
 }
-[e :U 261 ]
-"410
-}
-[; ;main.c: 409: }
-[; ;main.c: 410: }else{
-[e $U 262  ]
 [e :U 259 ]
+[; ;main.c: 395: }
+[; ;main.c: 399: if ( (PORTBbits.RB5 == 0)) {
+"399
+[e $ ! == -> . . _PORTBbits 0 5 `i -> 0 `i 261  ]
 {
-[; ;main.c: 411: timer7 = 5000;
+[; ;main.c: 400: if (timer8 == 0) {
+"400
+[e $ ! == _timer8 -> -> 0 `i `ui 262  ]
+{
+[; ;main.c: 401: timer8 = 10000;
+"401
+[e = _timer8 -> -> 10000 `i `ui ]
+[; ;main.c: 402: if (moc == 166) {
+"402
+[e $ ! == -> _moc `i -> 166 `i 263  ]
+{
+[; ;main.c: 403: moc = 0;
+"403
+[e = _moc -> -> 0 `i `uc ]
+"404
+}
+[; ;main.c: 404: }else{
+[e $U 264  ]
+[e :U 263 ]
+{
+[; ;main.c: 405: moc = 166;
+"405
+[e = _moc -> -> 166 `i `uc ]
+"406
+}
+[e :U 264 ]
+[; ;main.c: 406: }
+[; ;main.c: 407: LATAbits.LATA3 = 1;
+"407
+[e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 408: asm("clrwdt");
+"408
+[; <" clrwdt ;# ">
+[; ;main.c: 409: _delay((unsigned long)((1000)*(8000000/4000.0)));
+"409
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 410: asm("clrwdt");
+"410
+[; <" clrwdt ;# ">
+[; ;main.c: 411: _delay((unsigned long)((1000)*(8000000/4000.0)));
 "411
-[e = _timer7 -> -> 5000 `i `ui ]
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 "412
 }
 [e :U 262 ]
+"413
+}
 [; ;main.c: 412: }
-[; ;main.c: 425: if ( (PORTBbits.RB5 == 0) ) {
-"425
-[e $ ! == -> . . _PORTBbits 0 5 `i -> 0 `i 263  ]
+[; ;main.c: 413: }else{
+[e $U 265  ]
+[e :U 261 ]
 {
-[; ;main.c: 426: if ( (START_Fl ==0) && (timer3<10) ) {
-"426
-[e $ ! && == -> _START_Fl `i -> 0 `i < _timer3 -> -> 10 `i `ui 264  ]
-{
-[; ;main.c: 427: if (START == 0 ) {
-"427
-[e $ ! == -> _START `i -> 0 `i 265  ]
-{
-[; ;main.c: 428: START = 1;
-"428
-[e = _START -> -> 1 `i `uc ]
-[; ;main.c: 429: grzalka_numer = 1;
-"429
-[e = _grzalka_numer -> -> 1 `i `uc ]
-"430
+[; ;main.c: 414: timer8 = 10000;
+"414
+[e = _timer8 -> -> 10000 `i `ui ]
+"415
 }
-[; ;main.c: 430: }else{
-[e $U 266  ]
 [e :U 265 ]
+[; ;main.c: 415: }
+[; ;main.c: 417: if (moc == 0) {
+"417
+[e $ ! == -> _moc `i -> 0 `i 266  ]
 {
-[; ;main.c: 431: START = 0;
-"431
-[e = _START -> -> 0 `i `uc ]
-"432
+[; ;main.c: 419: ledBlink_time = 250;
+"419
+[e = _ledBlink_time -> -> 250 `i `ui ]
+"420
 }
-[e :U 266 ]
-[; ;main.c: 432: }
-[; ;main.c: 433: START_Fl = 1;
-"433
-[e = _START_Fl -> -> 1 `i `uc ]
-"434
-}
-[e :U 264 ]
-"435
-}
-[; ;main.c: 434: }
-[; ;main.c: 435: }else{
+[; ;main.c: 420: }else{
 [e $U 267  ]
-[e :U 263 ]
+[e :U 266 ]
 {
-[; ;main.c: 436: START_Fl = 0;
-"436
-[e = _START_Fl -> -> 0 `i `uc ]
-[; ;main.c: 437: timer3 = 60;
-"437
-[e = _timer3 -> -> 60 `i `ui ]
-"438
+[; ;main.c: 422: ledBlink_time = 50;
+"422
+[e = _ledBlink_time -> -> 50 `i `ui ]
+"423
 }
 [e :U 267 ]
-[; ;main.c: 438: }
-[; ;main.c: 441: if (czas_s < 1) {
-"441
-[e $ ! < _czas_s -> -> 1 `i `ui 268  ]
+[; ;main.c: 423: }
+[; ;main.c: 430: if ( ( (czas_s!= czas_flash) || (flash_moc!= moc) ) && (PORTBbits.RB3 ==1) && (PORTBbits.RB4 == 1) ) {
+"430
+[e $ ! && && || != _czas_s _czas_flash != -> _flash_moc `i -> _moc `i == -> . . _PORTBbits 0 3 `i -> 1 `i == -> . . _PORTBbits 0 4 `i -> 1 `i 268  ]
 {
-[; ;main.c: 442: czas_s = 1;
-"442
-[e = _czas_s -> -> 1 `i `ui ]
-"443
-}
-[e :U 268 ]
-[; ;main.c: 443: }
-[; ;main.c: 444: czas_ms = czas_s *1000UL;
-"444
-[e = _czas_ms * -> _czas_s `ul -> 1000 `ul ]
-[; ;main.c: 445: if (grzalka_numer>6) {
-"445
-[e $ ! > -> _grzalka_numer `i -> 6 `i 269  ]
+[; ;main.c: 432: if (timer7<4000) {
+"432
+[e $ ! < _timer7 -> -> 4000 `i `ui 269  ]
 {
-[; ;main.c: 446: grzalka_numer =1;
-"446
-[e = _grzalka_numer -> -> 1 `i `uc ]
-"447
+[; ;main.c: 433: kro_1 = 1;
+"433
+[e = _kro_1 -> -> 1 `i `uc ]
+[; ;main.c: 434: kro_2 = 1;
+"434
+[e = _kro_2 -> -> 1 `i `uc ]
+"435
 }
 [e :U 269 ]
-[; ;main.c: 447: }
-[; ;main.c: 448: if ( (START == 1) && (timer5 ==0) ) {
-"448
-[e $ ! && == -> _START `i -> 1 `i == _timer5 -> -> -> 0 `i `l `ul 270  ]
+[; ;main.c: 435: }
+[; ;main.c: 438: if (timer7 == 0 ) {
+"438
+[e $ ! == _timer7 -> -> 0 `i `ui 270  ]
 {
-[; ;main.c: 449: timer5 = czas_ms;
+"442
+[v _tmp `uc ~T0 @X0 1 a ]
+[; ;main.c: 442: unsigned char tmp;
+[; ;main.c: 443: tmp = (czas_s & 0x00ff);
+"443
+[e = _tmp -> & _czas_s -> -> 255 `i `ui `uc ]
+[; ;main.c: 444: erase_flash(adr_hi, adr_low);
+"444
+[e ( _erase_flash (2 , _adr_hi _adr_low ]
+[; ;main.c: 445: write_flash(adr_hi, adr_low, tmp );
+"445
+[e ( _write_flash (3 , , _adr_hi _adr_low _tmp ]
+[; ;main.c: 446: tmp = ((czas_s >>8)&0x00ff);
+"446
+[e = _tmp -> & >> _czas_s -> 8 `i -> -> 255 `i `ui `uc ]
+[; ;main.c: 447: write_flash(adr_hi, adr_low2, tmp);
+"447
+[e ( _write_flash (3 , , _adr_hi _adr_low2 _tmp ]
+[; ;main.c: 449: write_flash(adr_hi, adr_moc, moc);
 "449
-[e = _timer5 _czas_ms ]
-[; ;main.c: 451: switch (grzalka_numer) {
-"451
-[e $U 272  ]
-{
-[; ;main.c: 452: case 1:
-"452
-[e :U 273 ]
-[; ;main.c: 453: LATAbits.LATA0 = 1;
-"453
-[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
-[; ;main.c: 454: LATAbits.LATA1 = 0;
+[e ( _write_flash (3 , , _adr_hi _adr_moc _moc ]
+[; ;main.c: 454: flash_low = read_flash(adr_hi, adr_low);
 "454
-[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 455: LATAbits.LATA2 = 0;
+[e = _flash_low ( _read_flash (2 , _adr_hi _adr_low ]
+[; ;main.c: 455: flash_hi = (read_flash(adr_hi, adr_low2) );
 "455
-[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 456: break;
-"456
-[e $U 271  ]
-[; ;main.c: 457: case 2:
+[e = _flash_hi ( _read_flash (2 , _adr_hi _adr_low2 ]
+[; ;main.c: 457: flash_moc = read_flash(adr_hi, adr_moc);
 "457
-[e :U 274 ]
-[; ;main.c: 458: timer5 = czas_przerwa_ms;
-"458
-[e = _timer5 -> _czas_przerwa_ms `ul ]
-[; ;main.c: 459: LATAbits.LATA0 = 0;
-"459
-[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 460: LATAbits.LATA1 = 0;
+[e = _flash_moc ( _read_flash (2 , _adr_hi _adr_moc ]
+[; ;main.c: 460: flash_moc = moc;
 "460
-[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 461: LATAbits.LATA2 = 0;
+[e = _flash_moc _moc ]
+[; ;main.c: 461: czas_flash = czas_s;
 "461
-[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 462: break;
+[e = _czas_flash _czas_s ]
+[; ;main.c: 462: timer7 = 5000;
 "462
-[e $U 271  ]
-[; ;main.c: 463: case 3:
+[e = _timer7 -> -> 5000 `i `ui ]
 "463
-[e :U 275 ]
-[; ;main.c: 464: LATAbits.LATA0 = 0;
-"464
-[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 465: LATAbits.LATA1 = 1;
-"465
-[e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
-[; ;main.c: 466: LATAbits.LATA2 = 0;
-"466
-[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 467: break;
-"467
-[e $U 271  ]
-[; ;main.c: 468: case 4:
-"468
-[e :U 276 ]
-[; ;main.c: 469: timer5 = czas_przerwa_ms;
-"469
-[e = _timer5 -> _czas_przerwa_ms `ul ]
-[; ;main.c: 470: LATAbits.LATA0 = 0;
-"470
-[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 471: LATAbits.LATA1 = 0;
-"471
-[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 472: LATAbits.LATA2 = 0;
-"472
-[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 473: break;
-"473
-[e $U 271  ]
-[; ;main.c: 474: case 5:
-"474
-[e :U 277 ]
-[; ;main.c: 475: LATAbits.LATA0 = 0;
-"475
-[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 476: LATAbits.LATA1 = 0;
-"476
-[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 477: LATAbits.LATA2 = 1;
-"477
-[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 478: break;
-"478
-[e $U 271  ]
-[; ;main.c: 479: case 6:
-"479
-[e :U 278 ]
-[; ;main.c: 480: timer5 = czas_przerwa_ms;
-"480
-[e = _timer5 -> _czas_przerwa_ms `ul ]
-[; ;main.c: 481: LATAbits.LATA0 = 0;
-"481
-[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 482: LATAbits.LATA1 = 0;
-"482
-[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 483: LATAbits.LATA2 = 0;
-"483
-[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 484: break;
-"484
-[e $U 271  ]
-"485
-}
-[; ;main.c: 485: }
-[e $U 271  ]
-"451
-[e :U 272 ]
-[e [\ _grzalka_numer , $ -> -> 1 `i `uc 273
- , $ -> -> 2 `i `uc 274
- , $ -> -> 3 `i `uc 275
- , $ -> -> 4 `i `uc 276
- , $ -> -> 5 `i `uc 277
- , $ -> -> 6 `i `uc 278
- 271 ]
-"485
-[e :U 271 ]
-[; ;main.c: 486: grzalka_numer++;
-"486
-[e ++ _grzalka_numer -> -> 1 `i `uc ]
-"487
 }
 [e :U 270 ]
-[; ;main.c: 487: }
-[; ;main.c: 489: if (START == 1) {
-"489
-[e $ ! == -> _START `i -> 1 `i 279  ]
-{
-[; ;main.c: 490: if (timer4 ==0) {
-"490
-[e $ ! == _timer4 -> -> 0 `i `ui 280  ]
-{
-[; ;main.c: 491: timer4 =200;
-"491
-[e = _timer4 -> -> 200 `i `ui ]
-[; ;main.c: 492: LATAbits.LATA3 ^= 1;
-"492
-[e =^ . . _LATAbits 0 3 -> -> 1 `i `uc ]
-"493
+"464
 }
+[; ;main.c: 463: }
+[; ;main.c: 464: }else{
+[e $U 271  ]
+[e :U 268 ]
+{
+[; ;main.c: 465: timer7 = 5000;
+"465
+[e = _timer7 -> -> 5000 `i `ui ]
+"466
+}
+[e :U 271 ]
+[; ;main.c: 466: }
+[; ;main.c: 479: if ( (PORTBbits.RB5 == 0) ) {
+"479
+[e $ ! == -> . . _PORTBbits 0 5 `i -> 0 `i 272  ]
+{
+[; ;main.c: 480: if ( (START_Fl ==0) && (timer3<10) ) {
+"480
+[e $ ! && == -> _START_Fl `i -> 0 `i < _timer3 -> -> 10 `i `ui 273  ]
+{
+[; ;main.c: 481: if (START == 0 ) {
+"481
+[e $ ! == -> _START `i -> 0 `i 274  ]
+{
+[; ;main.c: 482: START = 1;
+"482
+[e = _START -> -> 1 `i `uc ]
+[; ;main.c: 483: grzalka_numer = 1;
+"483
+[e = _grzalka_numer -> -> 1 `i `uc ]
+"484
+}
+[; ;main.c: 484: }else{
+[e $U 275  ]
+[e :U 274 ]
+{
+[; ;main.c: 485: START = 0;
+"485
+[e = _START -> -> 0 `i `uc ]
+"486
+}
+[e :U 275 ]
+[; ;main.c: 486: }
+[; ;main.c: 487: START_Fl = 1;
+"487
+[e = _START_Fl -> -> 1 `i `uc ]
+"488
+}
+[e :U 273 ]
+"489
+}
+[; ;main.c: 488: }
+[; ;main.c: 489: }else{
+[e $U 276  ]
+[e :U 272 ]
+{
+[; ;main.c: 490: START_Fl = 0;
+"490
+[e = _START_Fl -> -> 0 `i `uc ]
+[; ;main.c: 491: timer3 = 60;
+"491
+[e = _timer3 -> -> 60 `i `ui ]
+"492
+}
+[e :U 276 ]
+[; ;main.c: 492: }
+[; ;main.c: 495: if (czas_s < 1) {
+"495
+[e $ ! < _czas_s -> -> 1 `i `ui 277  ]
+{
+[; ;main.c: 496: czas_s = 1;
+"496
+[e = _czas_s -> -> 1 `i `ui ]
+"497
+}
+[e :U 277 ]
+[; ;main.c: 497: }
+[; ;main.c: 498: czas_ms = czas_s *1000UL;
+"498
+[e = _czas_ms * -> _czas_s `ul -> 1000 `ul ]
+[; ;main.c: 499: if (grzalka_numer>6) {
+"499
+[e $ ! > -> _grzalka_numer `i -> 6 `i 278  ]
+{
+[; ;main.c: 500: grzalka_numer =1;
+"500
+[e = _grzalka_numer -> -> 1 `i `uc ]
+"501
+}
+[e :U 278 ]
+[; ;main.c: 501: }
+[; ;main.c: 502: if ( (START == 1) && (timer5 ==0) && (moc ==0) ) {
+"502
+[e $ ! && && == -> _START `i -> 1 `i == _timer5 -> -> -> 0 `i `l `ul == -> _moc `i -> 0 `i 279  ]
+{
+[; ;main.c: 503: timer5 = czas_ms;
+"503
+[e = _timer5 _czas_ms ]
+[; ;main.c: 505: switch (grzalka_numer) {
+"505
+[e $U 281  ]
+{
+[; ;main.c: 506: case 1:
+"506
+[e :U 282 ]
+[; ;main.c: 507: LATAbits.LATA0 = 1;
+"507
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 508: LATAbits.LATA1 = 0;
+"508
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 509: LATAbits.LATA2 = 0;
+"509
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 510: break;
+"510
+[e $U 280  ]
+[; ;main.c: 511: case 2:
+"511
+[e :U 283 ]
+[; ;main.c: 512: timer5 = czas_przerwa_ms;
+"512
+[e = _timer5 -> _czas_przerwa_ms `ul ]
+[; ;main.c: 513: LATAbits.LATA0 = 0;
+"513
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 514: LATAbits.LATA1 = 0;
+"514
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 515: LATAbits.LATA2 = 0;
+"515
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 516: break;
+"516
+[e $U 280  ]
+[; ;main.c: 517: case 3:
+"517
+[e :U 284 ]
+[; ;main.c: 518: LATAbits.LATA0 = 0;
+"518
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 519: LATAbits.LATA1 = 1;
+"519
+[e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
+[; ;main.c: 520: LATAbits.LATA2 = 0;
+"520
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 521: break;
+"521
+[e $U 280  ]
+[; ;main.c: 522: case 4:
+"522
+[e :U 285 ]
+[; ;main.c: 523: timer5 = czas_przerwa_ms;
+"523
+[e = _timer5 -> _czas_przerwa_ms `ul ]
+[; ;main.c: 524: LATAbits.LATA0 = 0;
+"524
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 525: LATAbits.LATA1 = 0;
+"525
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 526: LATAbits.LATA2 = 0;
+"526
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 527: break;
+"527
+[e $U 280  ]
+[; ;main.c: 528: case 5:
+"528
+[e :U 286 ]
+[; ;main.c: 529: LATAbits.LATA0 = 0;
+"529
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 530: LATAbits.LATA1 = 0;
+"530
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 531: LATAbits.LATA2 = 1;
+"531
+[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 532: break;
+"532
+[e $U 280  ]
+[; ;main.c: 533: case 6:
+"533
+[e :U 287 ]
+[; ;main.c: 534: timer5 = czas_przerwa_ms;
+"534
+[e = _timer5 -> _czas_przerwa_ms `ul ]
+[; ;main.c: 535: LATAbits.LATA0 = 0;
+"535
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 536: LATAbits.LATA1 = 0;
+"536
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 537: LATAbits.LATA2 = 0;
+"537
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 538: break;
+"538
+[e $U 280  ]
+"539
+}
+[; ;main.c: 539: }
+[e $U 280  ]
+"505
+[e :U 281 ]
+[e [\ _grzalka_numer , $ -> -> 1 `i `uc 282
+ , $ -> -> 2 `i `uc 283
+ , $ -> -> 3 `i `uc 284
+ , $ -> -> 4 `i `uc 285
+ , $ -> -> 5 `i `uc 286
+ , $ -> -> 6 `i `uc 287
+ 280 ]
+"539
 [e :U 280 ]
-"494
+[; ;main.c: 540: grzalka_numer++;
+"540
+[e ++ _grzalka_numer -> -> 1 `i `uc ]
+"541
 }
 [e :U 279 ]
-[; ;main.c: 493: }
-[; ;main.c: 494: }
-[; ;main.c: 497: if (START == 0) {
-"497
-[e $ ! == -> _START `i -> 0 `i 281  ]
-{
-[; ;main.c: 498: LATAbits.LATA0 = 0;
-"498
-[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 499: LATAbits.LATA1 = 0;
-"499
-[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 500: LATAbits.LATA2 = 0;
-"500
-[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 501: LATAbits.LATA3 = 0;
-"501
-[e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 502: timer5 = 0;
-"502
-[e = _timer5 -> -> -> 0 `i `l `ul ]
-"503
-}
-[e :U 281 ]
-[; ;main.c: 503: }
-[; ;main.c: 510: if (START ==1) {
-"510
-[e $ ! == -> _START `i -> 1 `i 282  ]
-{
-"511
-[v _liczba_tmp `Vui ~T0 @X0 1 a ]
-[; ;main.c: 511: volatile unsigned int liczba_tmp;
-[; ;main.c: 512: liczba_tmp = timer5/1000;
-"512
-[e = _liczba_tmp -> / _timer5 -> -> -> 1000 `i `l `ul `ui ]
-[; ;main.c: 513: wyswietl( liczba_tmp +1 );
-"513
-[e ( _wyswietl (1 + _liczba_tmp -> -> 1 `i `ui ]
-"514
-}
-[; ;main.c: 514: }else{
-[e $U 283  ]
-[e :U 282 ]
-{
-[; ;main.c: 515: wyswietl(czas_s);
-"515
-[e ( _wyswietl (1 _czas_s ]
-"517
-}
-[e :U 283 ]
-[; ;main.c: 517: }
-[; ;main.c: 521: if (START == 0) {
-"521
-[e $ ! == -> _START `i -> 0 `i 284  ]
-{
-[; ;main.c: 522: timer2 = 1800000;
-"522
-[e = _timer2 -> -> 1800000 `l `ul ]
-"523
-}
-[; ;main.c: 523: }else{
-[e $U 285  ]
-[e :U 284 ]
-{
-[; ;main.c: 524: if (timer2 == 0) {
-"524
-[e $ ! == _timer2 -> -> -> 0 `i `l `ul 286  ]
-{
-[; ;main.c: 525: START =0;
-"525
-[e = _START -> -> 0 `i `uc ]
-"526
-}
-[e :U 286 ]
-"527
-}
-[e :U 285 ]
-[; ;main.c: 526: }
-[; ;main.c: 527: }
-[; ;main.c: 529: asm("clrwdt");
-"529
-[; <" clrwdt ;# ">
-"530
-}
-[e :U 242 ]
-"317
-[e $U 243  ]
-[e :U 244 ]
-[; ;main.c: 530: }
-[; ;main.c: 532: return (0);
-"532
-[e ) -> 0 `i ]
-[e $UE 238  ]
-[; ;main.c: 533: }
-"533
-[e :UE 238 ]
-}
-"537
-[v _wyswietl `(v ~T0 @X0 1 ef1`ui ]
-"538
-{
-[; ;main.c: 537: void wyswietl(unsigned int liczba)
-[; ;main.c: 538: {
-[e :U _wyswietl ]
-"537
-[v _liczba `ui ~T0 @X0 1 r1 ]
-"538
-[f ]
-[; ;main.c: 541: if ( liczba > 599 ) {
-"541
-[e $ ! > _liczba -> -> 599 `i `ui 288  ]
-{
-[; ;main.c: 542: liczba = liczba/60;
-"542
-[e = _liczba / _liczba -> -> 60 `i `ui ]
-[; ;main.c: 543: cyf_1 = liczba/10;
+[; ;main.c: 541: }
+[; ;main.c: 543: if ( (START == 1) && (timer5 ==0) && (moc == 166) ) {
 "543
-[e = _cyf_1 -> / _liczba -> -> 10 `i `ui `uc ]
-[; ;main.c: 544: cyf_2 = liczba%10;
+[e $ ! && && == -> _START `i -> 1 `i == _timer5 -> -> -> 0 `i `l `ul == -> _moc `i -> 166 `i 288  ]
+{
+[; ;main.c: 544: timer5 = czas_ms;
 "544
-[e = _cyf_2 -> % _liczba -> -> 10 `i `ui `uc ]
-[; ;main.c: 545: kro_1 = 0;
-"545
-[e = _kro_1 -> -> 0 `i `uc ]
-[; ;main.c: 546: kro_2 = 1;
+[e = _timer5 _czas_ms ]
+[; ;main.c: 546: switch (grzalka_numer) {
 "546
-[e = _kro_2 -> -> 1 `i `uc ]
+[e $U 290  ]
+{
+[; ;main.c: 547: case 1:
 "547
-}
-[; ;main.c: 547: }else if( liczba > 99 ){
-[e $U 289  ]
-[e :U 288 ]
-[e $ ! > _liczba -> -> 99 `i `ui 290  ]
-{
-[; ;main.c: 548: cyf_1 = liczba/60;
-"548
-[e = _cyf_1 -> / _liczba -> -> 60 `i `ui `uc ]
-[; ;main.c: 549: kro_1 = 1;
-"549
-[e = _kro_1 -> -> 1 `i `uc ]
-[; ;main.c: 550: kro_2 = 0;
-"550
-[e = _kro_2 -> -> 0 `i `uc ]
-[; ;main.c: 551: cyf_2 = (liczba%60)/10;
-"551
-[e = _cyf_2 -> / % _liczba -> -> 60 `i `ui -> -> 10 `i `ui `uc ]
-"552
-}
-[; ;main.c: 552: }else if (liczba > 9) {
-[e $U 291  ]
-[e :U 290 ]
-[e $ ! > _liczba -> -> 9 `i `ui 292  ]
-{
-[; ;main.c: 553: cyf_1 = liczba/10;
-"553
-[e = _cyf_1 -> / _liczba -> -> 10 `i `ui `uc ]
-[; ;main.c: 554: cyf_2 = liczba%10;
-"554
-[e = _cyf_2 -> % _liczba -> -> 10 `i `ui `uc ]
-[; ;main.c: 555: kro_1 = 0;
-"555
-[e = _kro_1 -> -> 0 `i `uc ]
-[; ;main.c: 556: kro_2 = 0;
-"556
-[e = _kro_2 -> -> 0 `i `uc ]
-"557
-}
-[; ;main.c: 557: }else{
-[e $U 293  ]
-[e :U 292 ]
-{
-[; ;main.c: 558: cyf_1 = 10;
-"558
-[e = _cyf_1 -> -> 10 `i `uc ]
-[; ;main.c: 559: cyf_2 = liczba;
-"559
-[e = _cyf_2 -> _liczba `uc ]
-[; ;main.c: 560: kro_1 = 0;
-"560
-[e = _kro_1 -> -> 0 `i `uc ]
-[; ;main.c: 561: kro_2 = 0;
-"561
-[e = _kro_2 -> -> 0 `i `uc ]
-"562
-}
-[e :U 293 ]
 [e :U 291 ]
-[e :U 289 ]
-[; ;main.c: 562: }
-[; ;main.c: 564: }
+[; ;main.c: 548: timer5 = czas_przerwa_ms;
+"548
+[e = _timer5 -> _czas_przerwa_ms `ul ]
+[; ;main.c: 549: LATAbits.LATA0 = 1;
+"549
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 550: LATAbits.LATA1 = 0;
+"550
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 551: LATAbits.LATA2 = 0;
+"551
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 552: break;
+"552
+[e $U 289  ]
+[; ;main.c: 553: case 2:
+"553
+[e :U 292 ]
+[; ;main.c: 554: LATAbits.LATA0 = 1;
+"554
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 555: LATAbits.LATA1 = 1;
+"555
+[e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
+[; ;main.c: 556: LATAbits.LATA2 = 0;
+"556
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 557: break;
+"557
+[e $U 289  ]
+[; ;main.c: 558: case 3:
+"558
+[e :U 293 ]
+[; ;main.c: 559: timer5 = czas_przerwa_ms;
+"559
+[e = _timer5 -> _czas_przerwa_ms `ul ]
+[; ;main.c: 560: LATAbits.LATA0 = 0;
+"560
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 561: LATAbits.LATA1 = 1;
+"561
+[e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
+[; ;main.c: 562: LATAbits.LATA2 = 0;
+"562
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 563: break;
+"563
+[e $U 289  ]
+[; ;main.c: 564: case 4:
 "564
-[e :UE 287 ]
-}
+[e :U 294 ]
+[; ;main.c: 565: LATAbits.LATA0 = 0;
+"565
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 566: LATAbits.LATA1 = 1;
+"566
+[e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
+[; ;main.c: 567: LATAbits.LATA2 = 1;
+"567
+[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 568: break;
 "568
-[v _read_flash `(uc ~T0 @X0 1 ef2`uc`uc ]
+[e $U 289  ]
+[; ;main.c: 569: case 5:
 "569
-{
-[; ;main.c: 568: unsigned char read_flash( unsigned char adrs_hi,unsigned char adrs_lo)
-[; ;main.c: 569: {
-[e :U _read_flash ]
-"568
-[v _adrs_hi `uc ~T0 @X0 1 r1 ]
-[v _adrs_lo `uc ~T0 @X0 1 r2 ]
-"569
-[f ]
-[; ;main.c: 572: PMCON1bits.CFGS=0;
+[e :U 295 ]
+[; ;main.c: 570: timer5 = czas_przerwa_ms;
+"570
+[e = _timer5 -> _czas_przerwa_ms `ul ]
+[; ;main.c: 571: LATAbits.LATA0 = 0;
+"571
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 572: LATAbits.LATA1 = 0;
 "572
-[e = . . _PMCON1bits 0 6 -> -> 0 `i `uc ]
-[; ;main.c: 573: PMADRL=adrs_lo ;
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 573: LATAbits.LATA2 = 1;
 "573
-[e = _PMADRL _adrs_lo ]
-[; ;main.c: 574: PMADRH=adrs_hi;
+[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 574: break;
 "574
-[e = _PMADRH _adrs_hi ]
-[; ;main.c: 576: PMCON1bits.RD = 1;
+[e $U 289  ]
+[; ;main.c: 575: case 6:
+"575
+[e :U 296 ]
+[; ;main.c: 576: LATAbits.LATA0 = 1;
 "576
-[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
-[; ;main.c: 577: __nop();
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 577: LATAbits.LATA1 = 0;
 "577
-[e ( ___nop ..  ]
-[; ;main.c: 578: __nop();
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 578: LATAbits.LATA2 = 1;
 "578
-[e ( ___nop ..  ]
-[; ;main.c: 580: return PMDATL;
+[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 579: break;
+"579
+[e $U 289  ]
 "580
-[e ) _PMDATL ]
-[e $UE 294  ]
-[; ;main.c: 581: }
+}
+[; ;main.c: 580: }
+[e $U 289  ]
+"546
+[e :U 290 ]
+[e [\ _grzalka_numer , $ -> -> 1 `i `uc 291
+ , $ -> -> 2 `i `uc 292
+ , $ -> -> 3 `i `uc 293
+ , $ -> -> 4 `i `uc 294
+ , $ -> -> 5 `i `uc 295
+ , $ -> -> 6 `i `uc 296
+ 289 ]
+"580
+[e :U 289 ]
+[; ;main.c: 581: grzalka_numer++;
 "581
-[e :UE 294 ]
+[e ++ _grzalka_numer -> -> 1 `i `uc ]
+"582
 }
+[e :U 288 ]
+[; ;main.c: 582: }
+[; ;main.c: 587: if (START == 1) {
 "587
-[v _unlock_flash `(v ~T0 @X0 1 ef ]
+[e $ ! == -> _START `i -> 1 `i 297  ]
+{
+[; ;main.c: 588: if (timer4 ==0) {
 "588
+[e $ ! == _timer4 -> -> 0 `i `ui 298  ]
 {
-[; ;main.c: 587: void unlock_flash(void)
-[; ;main.c: 588: {
-[e :U _unlock_flash ]
-[f ]
-[; ;main.c: 589: PMCON2=0x55;
+[; ;main.c: 589: timer4 =ledBlink_time;
 "589
-[e = _PMCON2 -> -> 85 `i `uc ]
-[; ;main.c: 590: PMCON2=0xAA;
+[e = _timer4 _ledBlink_time ]
+[; ;main.c: 590: LATAbits.LATA3 ^= 1;
 "590
-[e = _PMCON2 -> -> 170 `i `uc ]
-[; ;main.c: 591: PMCON1bits.WR=1;
+[e =^ . . _LATAbits 0 3 -> -> 1 `i `uc ]
 "591
-[e = . . _PMCON1bits 0 1 -> -> 1 `i `uc ]
-[; ;main.c: 592: __nop();
+}
+[e :U 298 ]
 "592
-[e ( ___nop ..  ]
-[; ;main.c: 593: __nop();
-"593
-[e ( ___nop ..  ]
-[; ;main.c: 596: }
+}
+[e :U 297 ]
+[; ;main.c: 591: }
+[; ;main.c: 592: }
+[; ;main.c: 595: if (START == 0) {
+"595
+[e $ ! == -> _START `i -> 0 `i 299  ]
+{
+[; ;main.c: 596: LATAbits.LATA0 = 0;
 "596
-[e :UE 295 ]
-}
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 597: LATAbits.LATA1 = 0;
+"597
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 598: LATAbits.LATA2 = 0;
+"598
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 599: LATAbits.LATA3 = 0;
+"599
+[e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
+[; ;main.c: 600: timer5 = 0;
 "600
-[v _write_flash `(v ~T0 @X0 1 ef3`uc`uc`uc ]
+[e = _timer5 -> -> -> 0 `i `l `ul ]
 "601
-{
-[; ;main.c: 600: void write_flash(unsigned char adr_hi,unsigned char adr_lo,unsigned char data_lo)
-[; ;main.c: 601: {
-[e :U _write_flash ]
-[v _adr_hi `uc ~T0 @X0 1 r1 ]
-"600
-[v _adr_lo `uc ~T0 @X0 1 r2 ]
-[v _data_lo `uc ~T0 @X0 1 r3 ]
-"601
-[f ]
-[; ;main.c: 602: INTCONbits.GIE = 0;
-"602
-[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
-[; ;main.c: 603: PMCON1bits.CFGS=0;
-"603
-[e = . . _PMCON1bits 0 6 -> -> 0 `i `uc ]
-[; ;main.c: 605: PMADRH=adr_hi;
-"605
-[e = _PMADRH _adr_hi ]
-[; ;main.c: 606: PMADRL=adr_lo;
-"606
-[e = _PMADRL _adr_lo ]
-[; ;main.c: 608: PMCON1bits.FREE = 0;
-"608
-[e = . . _PMCON1bits 0 4 -> -> 0 `i `uc ]
-[; ;main.c: 609: PMCON1bits.LWLO=1;
-"609
-[e = . . _PMCON1bits 0 5 -> -> 1 `i `uc ]
-[; ;main.c: 610: PMCON1bits.WREN=1;
-"610
-[e = . . _PMCON1bits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 612: PMDATL=data_lo;
-"612
-[e = _PMDATL _data_lo ]
-[; ;main.c: 613: PMDATH = 0;
-"613
-[e = _PMDATH -> -> 0 `i `uc ]
-[; ;main.c: 616: PMCON1bits.LWLO = 0;
-"616
-[e = . . _PMCON1bits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 617: unlock_flash();
-"617
-[e ( _unlock_flash ..  ]
-[; ;main.c: 618: _delay((unsigned long)((3)*(8000000/4000.0)));
-"618
-[e ( __delay (1 -> * -> -> 3 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 619: PMCON1bits.WREN = 0;
-"619
-[e = . . _PMCON1bits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 621: INTCONbits.GIE = 1;
-"621
-[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-[; ;main.c: 622: }
-"622
-[e :UE 296 ]
-}
-"625
-[v _erase_flash `(v ~T0 @X0 1 ef2`uc`uc ]
-"626
-{
-[; ;main.c: 625: void erase_flash(unsigned char adr_hi,unsigned char adr_lo)
-[; ;main.c: 626: {
-[e :U _erase_flash ]
-[v _adr_hi `uc ~T0 @X0 1 r1 ]
-"625
-[v _adr_lo `uc ~T0 @X0 1 r2 ]
-"626
-[f ]
-[; ;main.c: 627: INTCONbits.GIE = 0;
-"627
-[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
-[; ;main.c: 628: PMCON1bits.CFGS=0;
-"628
-[e = . . _PMCON1bits 0 6 -> -> 0 `i `uc ]
-[; ;main.c: 630: PMADRH=adr_hi;
-"630
-[e = _PMADRH _adr_hi ]
-[; ;main.c: 631: PMADRL=adr_lo;
-"631
-[e = _PMADRL _adr_lo ]
-[; ;main.c: 633: PMCON1bits.FREE = 1;
-"633
-[e = . . _PMCON1bits 0 4 -> -> 1 `i `uc ]
-[; ;main.c: 634: PMCON1bits.WREN=1;
-"634
-[e = . . _PMCON1bits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 635: unlock_flash();
-"635
-[e ( _unlock_flash ..  ]
-[; ;main.c: 636: _delay((unsigned long)((3)*(8000000/4000.0)));
-"636
-[e ( __delay (1 -> * -> -> 3 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 637: PMCON1bits.WREN = 0;
-"637
-[e = . . _PMCON1bits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 639: INTCONbits.GIE = 1;
-"639
-[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-[; ;main.c: 640: }
-"640
-[e :UE 297 ]
-}
-[v F2090 `(v ~T0 @X0 1 tf ]
-"645
-[v _ISR `IF2090 ~T0 @X0 1 e ]
-"646
-{
-[; ;main.c: 645: void interrupt ISR(void)
-[; ;main.c: 646: {
-[e :U _ISR ]
-[f ]
-[; ;main.c: 648: if ( INTCONbits.TMR0IF == 1 ) {
-"648
-[e $ ! == -> . . _INTCONbits 0 2 `i -> 1 `i 299  ]
-{
-[; ;main.c: 650: if (multi>1) {
-"650
-[e $ ! > -> _multi `i -> 1 `i 300  ]
-{
-[; ;main.c: 652: LATB |= 0b00000011;
-"652
-[e =| _LATB -> -> 3 `i `uc ]
-[; ;main.c: 653: LATC = 255;
-"653
-[e = _LATC -> -> 255 `i `uc ]
-[; ;main.c: 655: if(idx==0){
-"655
-[e $ ! == -> _idx `i -> 0 `i 301  ]
-{
-[; ;main.c: 656: if (kro_1 == 1) {
-"656
-[e $ ! == -> _kro_1 `i -> 1 `i 302  ]
-{
-[; ;main.c: 657: LATC = ~(cyfry[cyf_1] | (1<<7));
-"657
-[e = _LATC -> ~ | -> *U + &U _cyfry * -> _cyf_1 `ux -> -> # *U &U _cyfry `ui `ux `i << -> 1 `i -> 7 `i `uc ]
-[; ;main.c: 658: LATB &= ~an[idx] ;
-"658
-[e =& _LATB -> ~ -> *U + &U _an * -> _idx `ux -> -> # *U &U _an `ui `ux `i `uc ]
-"659
-}
-[; ;main.c: 659: }else if( cyf_1 != 10 ){
-[e $U 303  ]
-[e :U 302 ]
-[e $ ! != -> _cyf_1 `i -> 10 `i 304  ]
-{
-[; ;main.c: 660: LATC = ~(cyfry[cyf_1] & ~(1<<7));
-"660
-[e = _LATC -> ~ & -> *U + &U _cyfry * -> _cyf_1 `ux -> -> # *U &U _cyfry `ui `ux `i ~ << -> 1 `i -> 7 `i `uc ]
-[; ;main.c: 661: LATB &= ~an[idx] ;
-"661
-[e =& _LATB -> ~ -> *U + &U _an * -> _idx `ux -> -> # *U &U _an `ui `ux `i `uc ]
-"662
-}
-[e :U 304 ]
-"663
-[e :U 303 ]
-}
-[e :U 301 ]
-[; ;main.c: 662: }
-[; ;main.c: 663: }
-[; ;main.c: 665: if(idx==1){
-"665
-[e $ ! == -> _idx `i -> 1 `i 305  ]
-{
-[; ;main.c: 666: if (kro_2 == 1) {
-"666
-[e $ ! == -> _kro_2 `i -> 1 `i 306  ]
-{
-[; ;main.c: 667: LATC = ~(cyfry[cyf_2] | (1<<7));
-"667
-[e = _LATC -> ~ | -> *U + &U _cyfry * -> _cyf_2 `ux -> -> # *U &U _cyfry `ui `ux `i << -> 1 `i -> 7 `i `uc ]
-[; ;main.c: 668: LATB &= ~an[idx] ;
-"668
-[e =& _LATB -> ~ -> *U + &U _an * -> _idx `ux -> -> # *U &U _an `ui `ux `i `uc ]
-"669
-}
-[; ;main.c: 669: }else if( cyf_2 != 10 ){
-[e $U 307  ]
-[e :U 306 ]
-[e $ ! != -> _cyf_2 `i -> 10 `i 308  ]
-{
-[; ;main.c: 670: LATC = ~(cyfry[cyf_2] & ~(1<<7));
-"670
-[e = _LATC -> ~ & -> *U + &U _cyfry * -> _cyf_2 `ux -> -> # *U &U _cyfry `ui `ux `i ~ << -> 1 `i -> 7 `i `uc ]
-[; ;main.c: 671: LATB &= ~an[idx] ;
-"671
-[e =& _LATB -> ~ -> *U + &U _an * -> _idx `ux -> -> # *U &U _an `ui `ux `i `uc ]
-"672
-}
-[e :U 308 ]
-"673
-[e :U 307 ]
-}
-[e :U 305 ]
-[; ;main.c: 672: }
-[; ;main.c: 673: }
-[; ;main.c: 676: if(++idx>1) idx=0;
-"676
-[e $ ! > -> =+ _idx -> -> 1 `i `uc `i -> 1 `i 309  ]
-[e = _idx -> -> 0 `i `uc ]
-[e :U 309 ]
-[; ;main.c: 677: multi =0;
-"677
-[e = _multi -> -> 0 `i `uc ]
-"678
-}
-[e :U 300 ]
-[; ;main.c: 678: }
-[; ;main.c: 679: multi++;
-"679
-[e ++ _multi -> -> 1 `i `uc ]
-[; ;main.c: 683: if (timer1 >0) {
-"683
-[e $ ! > _timer1 -> -> 0 `i `ui 310  ]
-{
-[; ;main.c: 684: timer1--;
-"684
-[e -- _timer1 -> -> 1 `i `ui ]
-"685
-}
-[e :U 310 ]
-[; ;main.c: 685: }
-[; ;main.c: 687: if (timer2 >0) {
-"687
-[e $ ! > _timer2 -> -> -> 0 `i `l `ul 311  ]
-{
-[; ;main.c: 688: timer2--;
-"688
-[e -- _timer2 -> -> -> 1 `i `l `ul ]
-"689
-}
-[e :U 311 ]
-[; ;main.c: 689: }
-[; ;main.c: 691: if (timer3 >0) {
-"691
-[e $ ! > _timer3 -> -> 0 `i `ui 312  ]
-{
-[; ;main.c: 692: timer3--;
-"692
-[e -- _timer3 -> -> 1 `i `ui ]
-"693
-}
-[e :U 312 ]
-[; ;main.c: 693: }
-[; ;main.c: 695: if (timer4 >0) {
-"695
-[e $ ! > _timer4 -> -> 0 `i `ui 313  ]
-{
-[; ;main.c: 696: timer4--;
-"696
-[e -- _timer4 -> -> 1 `i `ui ]
-"697
-}
-[e :U 313 ]
-[; ;main.c: 697: }
-[; ;main.c: 699: if (timer5 >0) {
-"699
-[e $ ! > _timer5 -> -> -> 0 `i `l `ul 314  ]
-{
-[; ;main.c: 700: timer5--;
-"700
-[e -- _timer5 -> -> -> 1 `i `l `ul ]
-"701
-}
-[e :U 314 ]
-[; ;main.c: 701: }
-[; ;main.c: 703: if (timer6 >0) {
-"703
-[e $ ! > _timer6 -> -> 0 `i `ui 315  ]
-{
-[; ;main.c: 704: timer6--;
-"704
-[e -- _timer6 -> -> 1 `i `ui ]
-"705
-}
-[e :U 315 ]
-[; ;main.c: 705: }
-[; ;main.c: 707: if (timer7 >0) {
-"707
-[e $ ! > _timer7 -> -> 0 `i `ui 316  ]
-{
-[; ;main.c: 708: timer7--;
-"708
-[e -- _timer7 -> -> 1 `i `ui ]
-"709
-}
-[e :U 316 ]
-[; ;main.c: 709: }
-[; ;main.c: 711: INTCONbits.TMR0IF = 0;
-"711
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-"712
 }
 [e :U 299 ]
-[; ;main.c: 712: }
-[; ;main.c: 718: }
+[; ;main.c: 601: }
+[; ;main.c: 608: if (START ==1) {
+"608
+[e $ ! == -> _START `i -> 1 `i 300  ]
+{
+"609
+[v _liczba_tmp `Vui ~T0 @X0 1 a ]
+[; ;main.c: 609: volatile unsigned int liczba_tmp;
+[; ;main.c: 610: liczba_tmp = (timer5-1)/1000;
+"610
+[e = _liczba_tmp -> / - _timer5 -> -> -> 1 `i `l `ul -> -> -> 1000 `i `l `ul `ui ]
+[; ;main.c: 611: if (timer5>500) {
+"611
+[e $ ! > _timer5 -> -> -> 500 `i `l `ul 301  ]
+{
+[; ;main.c: 612: wyswietl( liczba_tmp +1 );
+"612
+[e ( _wyswietl (1 + _liczba_tmp -> -> 1 `i `ui ]
+"613
+}
+[e :U 301 ]
+"616
+}
+[; ;main.c: 613: }
+[; ;main.c: 616: }else{
+[e $U 302  ]
+[e :U 300 ]
+{
+[; ;main.c: 617: wyswietl(czas_s);
+"617
+[e ( _wyswietl (1 _czas_s ]
+"619
+}
+[e :U 302 ]
+[; ;main.c: 619: }
+[; ;main.c: 623: if (START == 0) {
+"623
+[e $ ! == -> _START `i -> 0 `i 303  ]
+{
+[; ;main.c: 624: timer2 = 1800000;
+"624
+[e = _timer2 -> -> 1800000 `l `ul ]
+"625
+}
+[; ;main.c: 625: }else{
+[e $U 304  ]
+[e :U 303 ]
+{
+[; ;main.c: 626: if (timer2 == 0) {
+"626
+[e $ ! == _timer2 -> -> -> 0 `i `l `ul 305  ]
+{
+[; ;main.c: 627: START =0;
+"627
+[e = _START -> -> 0 `i `uc ]
+"628
+}
+[e :U 305 ]
+"629
+}
+[e :U 304 ]
+[; ;main.c: 628: }
+[; ;main.c: 629: }
+[; ;main.c: 631: asm("clrwdt");
+"631
+[; <" clrwdt ;# ">
+"632
+}
+[e :U 244 ]
+"333
+[e $U 245  ]
+[e :U 246 ]
+[; ;main.c: 632: }
+[; ;main.c: 634: return (0);
+"634
+[e ) -> 0 `i ]
+[e $UE 238  ]
+[; ;main.c: 635: }
+"635
+[e :UE 238 ]
+}
+"639
+[v _wyswietl `(v ~T0 @X0 1 ef1`ui ]
+"640
+{
+[; ;main.c: 639: void wyswietl(unsigned int liczba)
+[; ;main.c: 640: {
+[e :U _wyswietl ]
+"639
+[v _liczba `ui ~T0 @X0 1 r1 ]
+"640
+[f ]
+[; ;main.c: 643: if ( liczba > 599 ) {
+"643
+[e $ ! > _liczba -> -> 599 `i `ui 307  ]
+{
+[; ;main.c: 644: liczba = liczba/60;
+"644
+[e = _liczba / _liczba -> -> 60 `i `ui ]
+[; ;main.c: 645: cyf_1 = liczba/10;
+"645
+[e = _cyf_1 -> / _liczba -> -> 10 `i `ui `uc ]
+[; ;main.c: 646: cyf_2 = liczba%10;
+"646
+[e = _cyf_2 -> % _liczba -> -> 10 `i `ui `uc ]
+[; ;main.c: 647: kro_1 = 0;
+"647
+[e = _kro_1 -> -> 0 `i `uc ]
+[; ;main.c: 648: kro_2 = 1;
+"648
+[e = _kro_2 -> -> 1 `i `uc ]
+"649
+}
+[; ;main.c: 649: }else if( liczba > 99 ){
+[e $U 308  ]
+[e :U 307 ]
+[e $ ! > _liczba -> -> 99 `i `ui 309  ]
+{
+[; ;main.c: 650: cyf_1 = liczba/60;
+"650
+[e = _cyf_1 -> / _liczba -> -> 60 `i `ui `uc ]
+[; ;main.c: 651: kro_1 = 1;
+"651
+[e = _kro_1 -> -> 1 `i `uc ]
+[; ;main.c: 652: kro_2 = 0;
+"652
+[e = _kro_2 -> -> 0 `i `uc ]
+[; ;main.c: 653: cyf_2 = (liczba%60)/10;
+"653
+[e = _cyf_2 -> / % _liczba -> -> 60 `i `ui -> -> 10 `i `ui `uc ]
+"654
+}
+[; ;main.c: 654: }else if (liczba > 9) {
+[e $U 310  ]
+[e :U 309 ]
+[e $ ! > _liczba -> -> 9 `i `ui 311  ]
+{
+[; ;main.c: 655: cyf_1 = liczba/10;
+"655
+[e = _cyf_1 -> / _liczba -> -> 10 `i `ui `uc ]
+[; ;main.c: 656: cyf_2 = liczba%10;
+"656
+[e = _cyf_2 -> % _liczba -> -> 10 `i `ui `uc ]
+[; ;main.c: 657: kro_1 = 0;
+"657
+[e = _kro_1 -> -> 0 `i `uc ]
+[; ;main.c: 658: kro_2 = 0;
+"658
+[e = _kro_2 -> -> 0 `i `uc ]
+"659
+}
+[; ;main.c: 659: }else{
+[e $U 312  ]
+[e :U 311 ]
+{
+[; ;main.c: 660: cyf_1 = 10;
+"660
+[e = _cyf_1 -> -> 10 `i `uc ]
+[; ;main.c: 661: cyf_2 = liczba;
+"661
+[e = _cyf_2 -> _liczba `uc ]
+[; ;main.c: 662: kro_1 = 0;
+"662
+[e = _kro_1 -> -> 0 `i `uc ]
+[; ;main.c: 663: kro_2 = 0;
+"663
+[e = _kro_2 -> -> 0 `i `uc ]
+"664
+}
+[e :U 312 ]
+[e :U 310 ]
+[e :U 308 ]
+[; ;main.c: 664: }
+[; ;main.c: 666: }
+"666
+[e :UE 306 ]
+}
+"670
+[v _read_flash `(uc ~T0 @X0 1 ef2`uc`uc ]
+"671
+{
+[; ;main.c: 670: unsigned char read_flash( unsigned char adrs_hi,unsigned char adrs_lo)
+[; ;main.c: 671: {
+[e :U _read_flash ]
+"670
+[v _adrs_hi `uc ~T0 @X0 1 r1 ]
+[v _adrs_lo `uc ~T0 @X0 1 r2 ]
+"671
+[f ]
+[; ;main.c: 674: PMCON1bits.CFGS=0;
+"674
+[e = . . _PMCON1bits 0 6 -> -> 0 `i `uc ]
+[; ;main.c: 675: PMADRL=adrs_lo ;
+"675
+[e = _PMADRL _adrs_lo ]
+[; ;main.c: 676: PMADRH=adrs_hi;
+"676
+[e = _PMADRH _adrs_hi ]
+[; ;main.c: 678: PMCON1bits.RD = 1;
+"678
+[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 679: __nop();
+"679
+[e ( ___nop ..  ]
+[; ;main.c: 680: __nop();
+"680
+[e ( ___nop ..  ]
+[; ;main.c: 682: return PMDATL;
+"682
+[e ) _PMDATL ]
+[e $UE 313  ]
+[; ;main.c: 683: }
+"683
+[e :UE 313 ]
+}
+"689
+[v _unlock_flash `(v ~T0 @X0 1 ef ]
+"690
+{
+[; ;main.c: 689: void unlock_flash(void)
+[; ;main.c: 690: {
+[e :U _unlock_flash ]
+[f ]
+[; ;main.c: 691: PMCON2=0x55;
+"691
+[e = _PMCON2 -> -> 85 `i `uc ]
+[; ;main.c: 692: PMCON2=0xAA;
+"692
+[e = _PMCON2 -> -> 170 `i `uc ]
+[; ;main.c: 693: PMCON1bits.WR=1;
+"693
+[e = . . _PMCON1bits 0 1 -> -> 1 `i `uc ]
+[; ;main.c: 694: __nop();
+"694
+[e ( ___nop ..  ]
+[; ;main.c: 695: __nop();
+"695
+[e ( ___nop ..  ]
+[; ;main.c: 698: }
+"698
+[e :UE 314 ]
+}
+"702
+[v _write_flash `(v ~T0 @X0 1 ef3`uc`uc`uc ]
+"703
+{
+[; ;main.c: 702: void write_flash(unsigned char adr_hi,unsigned char adr_lo,unsigned char data_lo)
+[; ;main.c: 703: {
+[e :U _write_flash ]
+[v _adr_hi `uc ~T0 @X0 1 r1 ]
+"702
+[v _adr_lo `uc ~T0 @X0 1 r2 ]
+[v _data_lo `uc ~T0 @X0 1 r3 ]
+"703
+[f ]
+[; ;main.c: 704: INTCONbits.GIE = 0;
+"704
+[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
+[; ;main.c: 705: PMCON1bits.CFGS=0;
+"705
+[e = . . _PMCON1bits 0 6 -> -> 0 `i `uc ]
+[; ;main.c: 707: PMADRH=adr_hi;
+"707
+[e = _PMADRH _adr_hi ]
+[; ;main.c: 708: PMADRL=adr_lo;
+"708
+[e = _PMADRL _adr_lo ]
+[; ;main.c: 710: PMCON1bits.FREE = 0;
+"710
+[e = . . _PMCON1bits 0 4 -> -> 0 `i `uc ]
+[; ;main.c: 711: PMCON1bits.LWLO=1;
+"711
+[e = . . _PMCON1bits 0 5 -> -> 1 `i `uc ]
+[; ;main.c: 712: PMCON1bits.WREN=1;
+"712
+[e = . . _PMCON1bits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 714: PMDATL=data_lo;
+"714
+[e = _PMDATL _data_lo ]
+[; ;main.c: 715: PMDATH = 0;
+"715
+[e = _PMDATH -> -> 0 `i `uc ]
+[; ;main.c: 718: PMCON1bits.LWLO = 0;
 "718
-[e :UE 298 ]
+[e = . . _PMCON1bits 0 5 -> -> 0 `i `uc ]
+[; ;main.c: 719: unlock_flash();
+"719
+[e ( _unlock_flash ..  ]
+[; ;main.c: 720: _delay((unsigned long)((3)*(8000000/4000.0)));
+"720
+[e ( __delay (1 -> * -> -> 3 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 721: PMCON1bits.WREN = 0;
+"721
+[e = . . _PMCON1bits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 723: INTCONbits.GIE = 1;
+"723
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+[; ;main.c: 724: }
+"724
+[e :UE 315 ]
+}
+"727
+[v _erase_flash `(v ~T0 @X0 1 ef2`uc`uc ]
+"728
+{
+[; ;main.c: 727: void erase_flash(unsigned char adr_hi,unsigned char adr_lo)
+[; ;main.c: 728: {
+[e :U _erase_flash ]
+[v _adr_hi `uc ~T0 @X0 1 r1 ]
+"727
+[v _adr_lo `uc ~T0 @X0 1 r2 ]
+"728
+[f ]
+[; ;main.c: 729: INTCONbits.GIE = 0;
+"729
+[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
+[; ;main.c: 730: PMCON1bits.CFGS=0;
+"730
+[e = . . _PMCON1bits 0 6 -> -> 0 `i `uc ]
+[; ;main.c: 732: PMADRH=adr_hi;
+"732
+[e = _PMADRH _adr_hi ]
+[; ;main.c: 733: PMADRL=adr_lo;
+"733
+[e = _PMADRL _adr_lo ]
+[; ;main.c: 735: PMCON1bits.FREE = 1;
+"735
+[e = . . _PMCON1bits 0 4 -> -> 1 `i `uc ]
+[; ;main.c: 736: PMCON1bits.WREN=1;
+"736
+[e = . . _PMCON1bits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 737: unlock_flash();
+"737
+[e ( _unlock_flash ..  ]
+[; ;main.c: 738: _delay((unsigned long)((3)*(8000000/4000.0)));
+"738
+[e ( __delay (1 -> * -> -> 3 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 739: PMCON1bits.WREN = 0;
+"739
+[e = . . _PMCON1bits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 741: INTCONbits.GIE = 1;
+"741
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+[; ;main.c: 742: }
+"742
+[e :UE 316 ]
+}
+[v F2097 `(v ~T0 @X0 1 tf ]
+"747
+[v _ISR `IF2097 ~T0 @X0 1 e ]
+"748
+{
+[; ;main.c: 747: void interrupt ISR(void)
+[; ;main.c: 748: {
+[e :U _ISR ]
+[f ]
+[; ;main.c: 750: if ( INTCONbits.TMR0IF == 1 ) {
+"750
+[e $ ! == -> . . _INTCONbits 0 2 `i -> 1 `i 318  ]
+{
+[; ;main.c: 752: if (multi>1) {
+"752
+[e $ ! > -> _multi `i -> 1 `i 319  ]
+{
+[; ;main.c: 754: LATB |= 0b00000011;
+"754
+[e =| _LATB -> -> 3 `i `uc ]
+[; ;main.c: 755: LATC = 255;
+"755
+[e = _LATC -> -> 255 `i `uc ]
+[; ;main.c: 757: if(idx==0){
+"757
+[e $ ! == -> _idx `i -> 0 `i 320  ]
+{
+[; ;main.c: 758: if (kro_1 == 1) {
+"758
+[e $ ! == -> _kro_1 `i -> 1 `i 321  ]
+{
+[; ;main.c: 759: LATC = ~(cyfry[cyf_1] | (1<<7));
+"759
+[e = _LATC -> ~ | -> *U + &U _cyfry * -> _cyf_1 `ux -> -> # *U &U _cyfry `ui `ux `i << -> 1 `i -> 7 `i `uc ]
+[; ;main.c: 760: LATB &= ~an[idx] ;
+"760
+[e =& _LATB -> ~ -> *U + &U _an * -> _idx `ux -> -> # *U &U _an `ui `ux `i `uc ]
+"761
+}
+[; ;main.c: 761: }else if( cyf_1 != 10 ){
+[e $U 322  ]
+[e :U 321 ]
+[e $ ! != -> _cyf_1 `i -> 10 `i 323  ]
+{
+[; ;main.c: 762: LATC = ~(cyfry[cyf_1] & ~(1<<7));
+"762
+[e = _LATC -> ~ & -> *U + &U _cyfry * -> _cyf_1 `ux -> -> # *U &U _cyfry `ui `ux `i ~ << -> 1 `i -> 7 `i `uc ]
+[; ;main.c: 763: LATB &= ~an[idx] ;
+"763
+[e =& _LATB -> ~ -> *U + &U _an * -> _idx `ux -> -> # *U &U _an `ui `ux `i `uc ]
+"764
+}
+[e :U 323 ]
+"765
+[e :U 322 ]
+}
+[e :U 320 ]
+[; ;main.c: 764: }
+[; ;main.c: 765: }
+[; ;main.c: 767: if(idx==1){
+"767
+[e $ ! == -> _idx `i -> 1 `i 324  ]
+{
+[; ;main.c: 768: if (kro_2 == 1) {
+"768
+[e $ ! == -> _kro_2 `i -> 1 `i 325  ]
+{
+[; ;main.c: 769: LATC = ~(cyfry[cyf_2] | (1<<7));
+"769
+[e = _LATC -> ~ | -> *U + &U _cyfry * -> _cyf_2 `ux -> -> # *U &U _cyfry `ui `ux `i << -> 1 `i -> 7 `i `uc ]
+[; ;main.c: 770: LATB &= ~an[idx] ;
+"770
+[e =& _LATB -> ~ -> *U + &U _an * -> _idx `ux -> -> # *U &U _an `ui `ux `i `uc ]
+"771
+}
+[; ;main.c: 771: }else if( cyf_2 != 10 ){
+[e $U 326  ]
+[e :U 325 ]
+[e $ ! != -> _cyf_2 `i -> 10 `i 327  ]
+{
+[; ;main.c: 772: LATC = ~(cyfry[cyf_2] & ~(1<<7));
+"772
+[e = _LATC -> ~ & -> *U + &U _cyfry * -> _cyf_2 `ux -> -> # *U &U _cyfry `ui `ux `i ~ << -> 1 `i -> 7 `i `uc ]
+[; ;main.c: 773: LATB &= ~an[idx] ;
+"773
+[e =& _LATB -> ~ -> *U + &U _an * -> _idx `ux -> -> # *U &U _an `ui `ux `i `uc ]
+"774
+}
+[e :U 327 ]
+"775
+[e :U 326 ]
+}
+[e :U 324 ]
+[; ;main.c: 774: }
+[; ;main.c: 775: }
+[; ;main.c: 778: if(++idx>1) idx=0;
+"778
+[e $ ! > -> =+ _idx -> -> 1 `i `uc `i -> 1 `i 328  ]
+[e = _idx -> -> 0 `i `uc ]
+[e :U 328 ]
+[; ;main.c: 779: multi =0;
+"779
+[e = _multi -> -> 0 `i `uc ]
+"780
+}
+[e :U 319 ]
+[; ;main.c: 780: }
+[; ;main.c: 781: multi++;
+"781
+[e ++ _multi -> -> 1 `i `uc ]
+[; ;main.c: 785: if (timer1 >0) {
+"785
+[e $ ! > _timer1 -> -> 0 `i `ui 329  ]
+{
+[; ;main.c: 786: timer1--;
+"786
+[e -- _timer1 -> -> 1 `i `ui ]
+"787
+}
+[e :U 329 ]
+[; ;main.c: 787: }
+[; ;main.c: 789: if (timer2 >0) {
+"789
+[e $ ! > _timer2 -> -> -> 0 `i `l `ul 330  ]
+{
+[; ;main.c: 790: timer2--;
+"790
+[e -- _timer2 -> -> -> 1 `i `l `ul ]
+"791
+}
+[e :U 330 ]
+[; ;main.c: 791: }
+[; ;main.c: 793: if (timer3 >0) {
+"793
+[e $ ! > _timer3 -> -> 0 `i `ui 331  ]
+{
+[; ;main.c: 794: timer3--;
+"794
+[e -- _timer3 -> -> 1 `i `ui ]
+"795
+}
+[e :U 331 ]
+[; ;main.c: 795: }
+[; ;main.c: 797: if (timer4 >0) {
+"797
+[e $ ! > _timer4 -> -> 0 `i `ui 332  ]
+{
+[; ;main.c: 798: timer4--;
+"798
+[e -- _timer4 -> -> 1 `i `ui ]
+"799
+}
+[e :U 332 ]
+[; ;main.c: 799: }
+[; ;main.c: 801: if (timer5 >0) {
+"801
+[e $ ! > _timer5 -> -> -> 0 `i `l `ul 333  ]
+{
+[; ;main.c: 802: timer5--;
+"802
+[e -- _timer5 -> -> -> 1 `i `l `ul ]
+"803
+}
+[e :U 333 ]
+[; ;main.c: 803: }
+[; ;main.c: 805: if (timer6 >0) {
+"805
+[e $ ! > _timer6 -> -> 0 `i `ui 334  ]
+{
+[; ;main.c: 806: timer6--;
+"806
+[e -- _timer6 -> -> 1 `i `ui ]
+"807
+}
+[e :U 334 ]
+[; ;main.c: 807: }
+[; ;main.c: 809: if (timer7 >0) {
+"809
+[e $ ! > _timer7 -> -> 0 `i `ui 335  ]
+{
+[; ;main.c: 810: timer7--;
+"810
+[e -- _timer7 -> -> 1 `i `ui ]
+"811
+}
+[e :U 335 ]
+[; ;main.c: 811: }
+[; ;main.c: 813: if (timer8 >0) {
+"813
+[e $ ! > _timer8 -> -> 0 `i `ui 336  ]
+{
+[; ;main.c: 814: timer8--;
+"814
+[e -- _timer8 -> -> 1 `i `ui ]
+"815
+}
+[e :U 336 ]
+[; ;main.c: 815: }
+[; ;main.c: 816: INTCONbits.TMR0IF = 0;
+"816
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"817
+}
+[e :U 318 ]
+[; ;main.c: 817: }
+[; ;main.c: 823: }
+"823
+[e :UE 317 ]
 }

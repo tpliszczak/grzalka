@@ -41,6 +41,7 @@ volatile unsigned char x;
  volatile unsigned long timer5;
  volatile unsigned int timer6;
  volatile unsigned int timer7;
+ volatile unsigned int timer8;
  volatile unsigned char cyf_1;
  volatile unsigned char cyf_2;
  volatile unsigned char cyf_3;
@@ -90,7 +91,13 @@ volatile unsigned char x;
     volatile unsigned char adr_hi = 0x1F;
     volatile unsigned char flash_low;
     volatile unsigned char flash_hi;
+    
+    //nowy program
+    volatile unsigned char adr_moc = 0xFF;     
+    volatile unsigned char flash_moc;
+    volatile unsigned char moc;
         
+    volatile unsigned int ledBlink_time;
         
 
     
@@ -277,8 +284,8 @@ int main(int argc, char** argv) {
     timer5 = 5000;
     
     START = 0;
+    czas_s_reset = 10;
     czas_przerwa_ms = 100;
-    czas_s_reset = 15;
     
 
 
@@ -294,6 +301,15 @@ int main(int argc, char** argv) {
     
     flash_low = read_flash(adr_hi, adr_low);    
     flash_hi =  (read_flash(adr_hi, adr_low2) & 0x3fff );
+    
+    flash_moc =  read_flash(adr_hi, adr_moc);
+    if (flash_moc!=166) {
+        moc = 0;
+        flash_moc = 0;
+    }else{
+        moc=166;
+    }
+
 
     
     if ( (flash_low == 0xFF) && (flash_hi == 0xFF)) {
@@ -379,9 +395,39 @@ int main(int argc, char** argv) {
         }
         
         
+        //sprawdzanie wcisniecia do zmiany mocy*********************************
+        if ( (PRZYCISK == 0)) {
+            if (timer8 == 0) {            
+                timer8 = 10000; //10s
+                if (moc == 166) {
+                    moc = 0;
+                }else{
+                    moc = 166;
+                }
+                LED = 1;
+                CLRWDT(); 
+                __delay_ms(1000);          
+                CLRWDT(); 
+                __delay_ms(1000);
+            }
+        }else{
+            timer8 = 10000; //10s
+        }
+        
+        if (moc == 0) {   //miganie
+               // czas_przerwa_ms = 100;
+                ledBlink_time = 250;
+        }else{
+               // czas_przerwa_ms = 100;
+                ledBlink_time = 50;
+        }
+
+
+        
+        
         
         //zapis w pamieci
-        if ( (czas_s!= czas_flash) && (PRZYCISK_PLUS ==1) && (PRZYCISK_MINUS == 1) ) {
+        if ( ( (czas_s!= czas_flash) || (flash_moc!= moc)  ) && (PRZYCISK_PLUS ==1) && (PRZYCISK_MINUS == 1) ) {
             //LED = 1;
             if (timer7<4000) {
                 kro_1 = 1;
@@ -399,11 +445,19 @@ int main(int argc, char** argv) {
                 write_flash(adr_hi, adr_low, tmp );   //low             
                 tmp =  ((czas_s >>8)&0x00ff);
                 write_flash(adr_hi, adr_low2, tmp);   //high
+                                
+                write_flash(adr_hi, adr_moc, moc);   //moc grzalek
+                                
   
+                
+                
                 flash_low = read_flash(adr_hi, adr_low);                            
                 flash_hi = (read_flash(adr_hi, adr_low2) );
+            
+                flash_moc =  read_flash(adr_hi, adr_moc);
     
     
+                flash_moc = moc;
                 czas_flash = czas_s;
                 timer7 = 5000;
             }
@@ -445,7 +499,7 @@ int main(int argc, char** argv) {
         if (grzalka_numer>6) {
             grzalka_numer =1;
         }      
-        if ( (START == 1) && (timer5 ==0) ) {
+        if ( (START == 1) && (timer5 ==0) && (moc ==0) ) {
             timer5 = czas_ms;
             
              switch (grzalka_numer) {
@@ -485,10 +539,54 @@ int main(int argc, char** argv) {
              }
              grzalka_numer++;  
         }
+        //moc166      
+        if ( (START == 1) && (timer5 ==0) && (moc == 166) ) {
+            timer5 = czas_ms;
+            
+             switch (grzalka_numer) {
+                 case 1: //Q1                   
+                     timer5 = czas_przerwa_ms;
+                     Q1 = 1;
+                     Q2 = 0;
+                     Q3 = 0;
+                     break;               
+                 case 2: //Q1+Q2
+                     Q1 = 1;     
+                     Q2 = 1;         
+                     Q3 = 0;                    
+                     break;
+                 case 3: //Q2                  
+                     timer5 = czas_przerwa_ms;                  
+                     Q1 = 0;
+                     Q2 = 1;
+                     Q3 = 0;
+                     break;
+                 case 4: //Q2+Q3
+                     Q1 = 0;     
+                     Q2 = 1;         
+                     Q3 = 1;
+                     break;
+                 case 5: //Q3                        
+                     timer5 = czas_przerwa_ms;
+                     Q1 = 0;
+                     Q2 = 0;
+                     Q3 = 1;
+                     break;
+                 case 6: //Q3+Q1
+                     Q1 = 1;     
+                     Q2 = 0;         
+                     Q3 = 1;
+                     break;
+             }
+             grzalka_numer++;  
+        }
+        
+        
         //miganie przycisku 0,2s
+
         if (START == 1) {
             if (timer4 ==0) {
-                timer4 =200;
+                timer4 =ledBlink_time;
                 LED ^= 1; 
             }
         }
@@ -509,8 +607,12 @@ int main(int argc, char** argv) {
         //wyswietlanie cyfr
         if (START ==1) {
             volatile unsigned int liczba_tmp;
-            liczba_tmp = timer5/1000;
-            wyswietl( liczba_tmp +1 );
+            liczba_tmp = (timer5-1)/1000;
+            if (timer5>500) {
+                wyswietl( liczba_tmp +1 );
+            }
+
+
         }else{
             wyswietl(czas_s);
             //wyswietl(flash_low);        
@@ -707,7 +809,10 @@ void interrupt ISR(void)
         if (timer7 >0) {
             timer7--;
         }
-        
+
+        if (timer8 >0) {
+            timer8--;
+        }        
         INTCONbits.TMR0IF = 0;
     }
 
